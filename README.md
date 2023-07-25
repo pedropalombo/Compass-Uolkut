@@ -28,4 +28,5 @@
       "source.fixAll": true
   },
   "editor.formatOnSave": false,
+  "files.eol": "\n",
   ```
