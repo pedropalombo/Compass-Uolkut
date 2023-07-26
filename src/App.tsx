@@ -1,12 +1,7 @@
-import { Header } from "./components/Header";
+import { Router } from "./routes";
+
 import "./App.module.css";
-import { DisplayLogin } from "./components/DisplayLogin";
 
 export const App = () => {
-  return (
-    <>
-      <Header />
-      <DisplayLogin />
-    </>
-  );
+  return <Router />;
 };
