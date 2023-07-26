@@ -1,5 +1,3 @@
-const CreateAccount = () => {
+const CreateAccount = () => {};
 
-};
-
-export default CreateAccount
+export default CreateAccount;
