@@ -1,0 +1,106 @@
+.container_form_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #fff;
+    width:30% ;
+    padding: 2% 0;
+    border-radius: 12px;
+}
+#title_login{
+    margin-top: .7em;
+    font-size: 24px;
+    color: #ED2590;
+    font-size: var(--3xl);
+    margin-bottom: 0;
+}   
+
+
+#checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    accent-color: var(--brand-color);
+    appearance: none;
+    background-color: #ED2590;
+    border-radius: 25%;
+}
+#checkbox:hover{
+    cursor: pointer;
+}
+
+.container_checkbox{
+    display: flex;
+    margin-right:9.8em;
+    justify-content: center;
+    height: auto;
+}
+#remember_password{
+    margin-top: 1.24em;
+    font-size: 16px;
+    margin-left: 12px;
+    color: #868686;
+    font-weight: 400;
+}
+
+#forget_password{
+    font-weight: 400;
+    color: #ED2590;
+    margin-top: 1.24em;
+    font-size: 14px;
+    border-bottom:1px solid #ED2590;
+}
+/* style default for circle */
+#circle{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    border: 5px solid #ED2590;
+    margin-bottom: 0;
+}
+
+/* style default for forms */
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    font-weight: 500;
+    padding-left: 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    width: 25em;
+    height: 4em;
+    margin-top: 1.5em;
+    background: #EFF3F8;
+}
+#create_acount{
+    background: #EFF3F8;
+    color: #ED2590;
+    font-size: 13px;
+    width:25em;
+    
+}
+a{
+    text-decoration: none;
+    color: #4B4B4B;
+    font-size: 18px;  
+}
+button{
+    margin-top:2em;
+    width: 25em;
+    height: 4em;
+    border: none;
+    border-radius: 8px;
+    background: #ED2590;
+    cursor: pointer;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 500;
+}
