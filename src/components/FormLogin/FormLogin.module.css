@@ -3,15 +3,17 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #fff;
-    width:30% ;
+    background: var(--dark-40);
+    width:25vw ;
+    height: 70vh;
     padding: 2% 0;
     border-radius: 12px;
 }
+
 #title_login{
     margin-top: .7em;
     font-size: 24px;
-    color: #ED2590;
+    color: var(--brand-color);
     font-size: var(--3xl);
     margin-bottom: 0;
 }   
@@ -21,15 +23,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2rem;
+    margin-left: 1.3rem;
     width: 20px;
     height: 20px;
-    accent-color: var(--brand-color);
+    accent-color: var(--dark-20);
     appearance: none;
-    background-color: #ED2590;
+    background-color: var(--dark-20);
     border-radius: 25%;
 }
+
 #checkbox:hover{
     cursor: pointer;
+}
+#checkbox:checked{
+    accent-color: var(--brand-color);
+    background-color: var(--brand-color);
 }
 
 .container_checkbox{
@@ -39,68 +48,70 @@
     height: auto;
 }
 #remember_password{
-    margin-top: 1.24em;
+    margin-top: 2.1rem;
     font-size: 16px;
     margin-left: 12px;
-    color: #868686;
+    color: var(--dark-20);
     font-weight: 400;
 }
 
 #forget_password{
     font-weight: 400;
-    color: #ED2590;
+    color: var(--brand-color);
     margin-top: 1.24em;
     font-size: 14px;
-    border-bottom:1px solid #ED2590;
+    border-bottom:1px solid var(--brand-color);
+    text-decoration: none;
+    font-size: var(--sm); 
 }
-/* style default for circle */
-#circle{
+
+#logo_orkut{
+    margin-left: auto;
+    margin-right: auto;
     height: 32px;
     width: 32px;
-    border-radius: 50%;
-    border: 5px solid #ED2590;
-    margin-bottom: 0;
 }
 
 /* style default for forms */
-form{
+#form_login{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-input{
-    font-weight: 500;
+
+.input_form{
+    font-size: var(--md);
     padding-left: 8px;
-    font-size: 13px;
     border: none;
     border-radius: 5px;
-    width: 25em;
-    height: 4em;
+    width: 22vw;
+    height: 8vh;
     margin-top: 1.5em;
-    background: #EFF3F8;
+    background: var(--dark-25);
 }
+
 #create_acount{
-    background: #EFF3F8;
-    color: #ED2590;
-    font-size: 13px;
-    width:25em;
-    
-}
-a{
-    text-decoration: none;
-    color: #4B4B4B;
-    font-size: 18px;  
-}
-button{
-    margin-top:2em;
-    width: 25em;
-    height: 4em;
+    background:var(--dark-25);
+    color: var(--brand-color);
+    font-size: var(--sm);
+    padding-left: 8px;
     border: none;
     border-radius: 8px;
-    background: #ED2590;
+    width: 22vw;
+    height: 8vh;
+    margin-top: 1.5em;
+    cursor: pointer;   
+}
+#form_button{
+    margin-top:2em;
+    width: 22vw;
+    height: 8vh;
+    border: none;
+    border-radius: 8px;
+    background: var(--brand-color);
     cursor: pointer;
-    font-size: 13px;
-    color: #fff;
+    font-size: var(--sm);
+    color: var(--dark-40);
     font-weight: 500;
 }

@@ -3,7 +3,11 @@ export const Header = () => {
   return (
     <header className={styles.nav_bar}>
       <a href="#">
-        <img src="src\assets\images\logo-orkut.svg" alt="LOGO" />
+        <img
+          id={styles.img_logo}
+          src="src\assets\images\logo-orkut.svg"
+          alt="LOGO"
+        />
       </a>
       <div className={styles.container_pags}>
         <a className={styles.anchor} href="#">
