@@ -1,10 +1,15 @@
+/*so it doesn't show the scroll bar*/
+body{
+    overflow: hidden;
+}
+
 .nav_bar{
     display: flex;
     justify-content: space-between;
     padding: 15px 0;
     width: 100%;
     background-color: #fff;
-    position:fixed;
+    position:static;    /*previous: fixed*/
     top: 0;
     z-index:99;
 }
