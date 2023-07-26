@@ -1,6 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
-
-                
+            
 *{
     font-family: SF Pro Display;
 }
@@ -9,3 +8,4 @@ body{
     padding: 0em;
     background-color:#D9E6F7;
 }
+

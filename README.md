@@ -22,7 +22,7 @@
 ## Eslint and Prettier
 
 - Install and enable [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) extension
-- Paste code below into your **User Settings**
+- Paste the code below into your **User Settings**
   ```json
   "editor.codeActionsOnSave": {
       "source.fixAll": true
@@ -30,3 +30,4 @@
   "editor.formatOnSave": false,
   "files.eol": "\n",
   ```
+

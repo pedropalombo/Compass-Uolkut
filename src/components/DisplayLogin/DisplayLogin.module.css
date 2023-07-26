@@ -1,0 +1,7 @@
+#container_display_login{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+     margin: 6em auto;
+     
+}
