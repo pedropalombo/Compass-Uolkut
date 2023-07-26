@@ -3,9 +3,9 @@
   --brand-color: #ED2590;
   
   --dark-10: #4B4B4B;
-  --dark-20: #B4AEAE66;
-  --dark-30: #FDFEFF33;
-  --dark-40: #FFFFFF1A;
+  --dark-20: #B4AEAE;
+  --dark-30: #FDFEFF;
+  --dark-40: #FFFFFF;
 
   --message-support: #2962FF;
   --sucesss-support: #0BB07B;
@@ -20,6 +20,12 @@
   --xl: 1.25rem;
   --2xl: 1.5rem;
   --3xl: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
