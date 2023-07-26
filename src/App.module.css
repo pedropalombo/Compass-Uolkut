@@ -1,0 +1,32 @@
+:root {
+  /* --- COLORS ---  */
+  --brand-color: #ED2590;
+  
+  --dark-10: #4B4B4B;
+  --dark-20: #B4AEAE66;
+  --dark-30: #FDFEFF33;
+  --dark-40: #FFFFFF1A;
+
+  --message-support: #2962FF;
+  --sucesss-support: #0BB07B;
+  --warning-support: #FFCE52;
+  --error-support: #F03D3D;
+  --information-support: #E0E0E0;
+
+  /* --- FONT SIZES --- */
+  --sm: 0.875rem;
+  --md: 1rem;
+  --lg: 1.125rem;
+  --xl: 1.25rem;
+  --2xl: 1.5rem;
+  --3xl: 2rem;
+}
+
+@font-face {
+  font-family: sf-pro-display, sans-serif;
+  src: url("assets/SFProDisplay-Regular.ttf");
+}
+
+body, html {
+  font-family: sf-pro-display, sans-serif;
+}
