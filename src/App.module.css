@@ -40,3 +40,7 @@ body, html {
   font-family: sf-pro-display, sans-serif;
   background-color: var(--background);
 }
+
+li {
+  list-style: none;
+}
