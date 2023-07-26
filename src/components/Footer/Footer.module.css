@@ -1,9 +1,12 @@
 .footer {
   display: flex;
+  position: absolute;
   align-items: center;
   justify-content: center;
   height: 3rem;
+  width: 100%;
   background-color: var(--dark-30);
+  bottom: 0;
 }
 
 .footer p {

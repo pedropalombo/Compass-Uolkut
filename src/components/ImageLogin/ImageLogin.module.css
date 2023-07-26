@@ -1,8 +1,8 @@
 .section_image{
     display: flex;
     flex-direction: column-reverse;
-    width: 44em;
-    height: 33.5em;
+    width: 45vw;
+    height: 70vh;
     background-color: #fff;
     border-radius: 1em;
     margin-right: 2em;

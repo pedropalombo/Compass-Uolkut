@@ -1,9 +1,11 @@
 :root {
   /* --- COLORS ---  */
   --brand-color: #ED2590;
-  
+  --background: #D9E6F7;
+
   --dark-10: #4B4B4B;
   --dark-20: #B4AEAE;
+  --dark-25: #EFF3F8;
   --dark-30: #FDFEFF;
   --dark-40: #FFFFFF;
 
@@ -12,6 +14,7 @@
   --warning-support: #FFCE52;
   --error-support: #F03D3D;
   --information-support: #E0E0E0;
+  
 
   /* --- FONT SIZES --- */
   --sm: 0.875rem;   /* 14px */
@@ -35,4 +38,5 @@
 
 body, html {
   font-family: sf-pro-display, sans-serif;
+  background-color: var(--background);
 }

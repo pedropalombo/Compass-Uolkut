@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { DisplayLogin } from "../components/DisplayLogin";
+import { DisplayLogin } from "../pages/Login";
 
 const routes = createBrowserRouter([
   {
