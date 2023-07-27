@@ -38,10 +38,10 @@ export const FormAccount = () => {
           <input type="password" />
         </label>
         <br />
-        <label className={styles.checkbox_terms}>
-          Eu concordo com todos os termos de uso
+        <section className={styles.terms_flex}>
+          <h5>Eu concordo com todos os termos de uso</h5>
           <input type="checkbox" className={styles.checkbox_input} />
-        </label>
+        </section>
         <Link to={"/register/details"}>
           <button type="submit"> Continuar </button>
         </Link>
