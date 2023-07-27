@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
-import { DisplayLogin } from "../components/DisplayLogin";
+import { DisplayLogin } from ".././pages/Login";
 import { CreateAccount } from "../components/CreateAccount/CreateAccount";
 import { CreateAccountDetail } from "../components/CreateAccountDetail/CreateAccountDetail";
 

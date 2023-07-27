@@ -1,106 +1,116 @@
-.container_form_login{
+.form_container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    background: #fff;
-    width:30% ;
-    padding: 2% 0;
-    border-radius: 12px;
+    background: var(--dark-30);
+    border-radius: 16px;
+    min-width: 25rem;
+    padding: 3rem 1.5rem;
 }
-#title_login{
-    margin-top: .7em;
-    font-size: 24px;
-    color: #ED2590;
-    font-size: var(--3xl);
-    margin-bottom: 0;
-}   
 
-
-#checkbox{
+.header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
-    accent-color: var(--brand-color);
-    appearance: none;
-    background-color: #ED2590;
-    border-radius: 25%;
+    gap: 1rem;
 }
-#checkbox:hover{
+
+.header h2 {
+    color: var(--brand-color);
+    font-size: var(--4xl);
+}
+
+.inputs_form_section {
+    display: flex;
+    flex-direction: column    ;
+    gap: 1.5rem;
+
+    margin-top: 2.5rem;
+}
+
+.inputs_form_section input {
+    font-size: var(--md);
+}
+
+.inputs_form_section input[type="email"], input[type="password"] {
+    background-color: #EFF3F8;
+    padding: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    color: var(--dark-10);
+} 
+
+.checkbox_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.checkbox_container input {
+    all:unset;border-style: solid transparent;
+    border-radius: 6px;
+    
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 3px;
+
+    border-style: solid transparent;
+    border-radius: 6px;
+    outline: 1px solid #DCDCDC;
+    outline-offset: 3px;
+    box-shadow: 0px 0px 0px 3px var(--dark-25);
+}
+
+.checkbox_container input:hover {
+    background-color: var(--brand-color);
     cursor: pointer;
 }
 
-.container_checkbox{
-    display: flex;
-    margin-right:9.8em;
-    justify-content: center;
-    height: auto;
-}
-#remember_password{
-    margin-top: 1.24em;
-    font-size: 16px;
-    margin-left: 12px;
-    color: #868686;
-    font-weight: 400;
+.checkbox_container label {
+    color: var(--dark-10);
 }
 
-#forget_password{
-    font-weight: 400;
-    color: #ED2590;
-    margin-top: 1.24em;
-    font-size: 14px;
-    border-bottom:1px solid #ED2590;
-}
-/* style default for circle */
-#circle{
-    height: 32px;
-    width: 32px;
-    border-radius: 50%;
-    border: 5px solid #ED2590;
-    margin-bottom: 0;
-}
-
-/* style default for forms */
-form{
+.buttons_container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    gap: 1.5rem;
+
+    margin-top: 2.5rem;
 }
-input{
-    font-weight: 500;
-    padding-left: 8px;
-    font-size: 13px;
-    border: none;
-    border-radius: 5px;
-    width: 25em;
-    height: 4em;
-    margin-top: 1.5em;
-    background: #EFF3F8;
-}
-#create_acount{
-    background: #EFF3F8;
-    color: #ED2590;
-    font-size: 13px;
-    width:25em;
-    
-}
-a{
-    text-decoration: none;
-    color: #4B4B4B;
-    font-size: 18px;  
-}
-button{
-    margin-top:2em;
-    width: 25em;
-    height: 4em;
+
+.buttons_container button {
+    width: 100%;
+    font-size: var(--lg);
+
+    padding: 1rem 0;
     border: none;
     border-radius: 8px;
-    background: #ED2590;
+}
+
+.buttons_container button:hover {
     cursor: pointer;
-    font-size: 13px;
-    color: #fff;
-    font-weight: 500;
+    width: 100%;
+}
+
+.login_button {
+    background-color: var(--brand-color);
+    color: var(--dark-40);
+}
+
+.signup_button {
+    background-color: #EFF3F8;
+    color: var(--brand-color);
+}
+
+.buttons_container a {
+    text-align: center;
+    color: var(--brand-color);
+    font-size: var(--sm);
+}
+
+@media (max-width: 520px) {
+    .form_container {
+        min-width: 20rem;
+    }
 }

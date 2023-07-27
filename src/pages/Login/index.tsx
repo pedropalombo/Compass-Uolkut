@@ -1,10 +1,11 @@
-import { FormAccount } from "../FormAccount/FormAccount";
-import { Header } from "../Header";
-import { Footer } from "../Footer";
-import styles from "./CreateAccount.module.css";
-import wallpaper from "../../assets/images/wallpaper.svg";
+import { Header } from "../../components/Header";
+import { FormLogin } from "../../components/FormLogin";
+import { Footer } from "../../components/Footer";
 
-export const CreateAccount = () => {
+import wallpaper from "../../assets/images/wallpaper.svg";
+import styles from "./Login.module.css";
+
+export const DisplayLogin = () => {
   return (
     <div className={styles.login_container}>
       <Header />
@@ -18,7 +19,7 @@ export const CreateAccount = () => {
               instantâneas
             </p>
           </aside>
-          <FormAccount />
+          <FormLogin />
         </article>
       </main>
       <Footer />

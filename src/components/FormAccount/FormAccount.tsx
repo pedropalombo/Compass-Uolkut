@@ -1,50 +1,56 @@
 import styles from "./FormAccount.module.css";
-import { ImageLogin } from "../ImageLogin";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo-orkut-simples.svg";
 
 export const FormAccount = () => {
   return (
-    <section className={styles.content_background}>
-      <ImageLogin />
-      <form className={styles.content_form}>
-        <img src="../../assets/images/logo-orkut.svg" alt="" />
-        <h2> Acesse o Orkut</h2>
-        <label>
-          Digite seu nome completo
-          <input type="text" placeholder="Ex: Zé José Josaias" />
-        </label>
-        <label>
-          Digite seu e-mail
-          <input type="email" placeholder="zezinhozeze@gmail.com" />
-        </label>
-        <label>
-          Selecione sua data de nascimento
-          <input type="date" />
-        </label>
-        <label>
-          Digite sua cidade e estado
-          <input type="text" placeholder="Ex: Recife-PE" />
-        </label>
-        <label>
-          Digite sua senha
-          <input
-            type="password"
-            placeholder="Mínimo de 6 caracteres"
-            minLength={8}
-          />
-        </label>
-        <label>
-          Confirme sua senha
-          <input type="password" />
-        </label>
-        <br />
-        <section className={styles.terms_flex}>
-          <h5>Eu concordo com todos os termos de uso</h5>
-          <input type="checkbox" className={styles.checkbox_input} />
-        </section>
-        <Link to={"/register/details"}>
-          <button type="submit"> Continuar </button>
-        </Link>
+    <section className={styles.container_form}>
+      <header className={styles.header}>
+        <img src={logo} alt="" />
+        <h2>Acesse o Orkut </h2>
+      </header>
+      <form>
+        <fieldset className={styles.inputs_form_section}>
+          <label>
+            Digite seu nome Completo
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="José Josaias Junior"
+            />
+          </label>
+          <label>
+            Digite seu email
+            <input type="email" placeholder="JJJzezinho@gmail.com" />
+          </label>
+          <label>
+            Digite sua data de nascimento
+            <input type="date" name="date" id="date" />
+          </label>
+          <label>
+            Crie uma senha
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Pelo menos 6 caracteres"
+            />
+          </label>
+          <label>
+            Digite a senha novamente
+            <input type="password" name="password" id="password" />
+          </label>
+          <Link to={"/register/details"}>
+            <button type="submit"> Continuar </button>
+          </Link>
+          <Link to={"/"}>
+            <button type="submit" className={styles.button_back_login}>
+              {" "}
+              Já tenho uma conta{" "}
+            </button>
+          </Link>
+        </fieldset>
       </form>
     </section>
   );

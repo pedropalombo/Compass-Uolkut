@@ -1,18 +1,19 @@
+import logo from "../../assets/images/logo-orkut-simples.svg";
 import styles from "./Header.module.css";
+
 export const Header = () => {
   return (
-    <header className={styles.nav_bar}>
-      <a href="#">
-        <img src="src\assets\images\logo-orkut.svg" alt="LOGO" />
-      </a>
-      <div className={styles.container_pags}>
-        <a className={styles.anchor} href="#">
-          Sobre o Orkut
-        </a>
-        <a className={styles.anchor} href="#">
-          Centro de segurança
-        </a>
-      </div>
+    <header className={styles.header}>
+      <h1>
+        <img src={logo} alt="" />
+      </h1>
+
+      <nav className={styles.nav}>
+        <ul>
+          <li>Sobre o Orkut</li>
+          <li>Centro de segurança</li>
+        </ul>
+      </nav>
     </header>
   );
 };
