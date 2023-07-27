@@ -1,5 +1,4 @@
-import logo from "../../assets/images/logo-orkut.svg";
-
+import logo from "../../assets/images/logo-orkut-simples.svg";
 import styles from "./Header.module.css";
 
 export const Header = () => {
