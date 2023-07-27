@@ -15,7 +15,6 @@
   --error-support: #F03D3D;
   --information-support: #E0E0E0;
   
-
   /* --- FONT SIZES --- */
   --sm: 0.875rem;   /* 14px */
   --md: 1rem;       /* 16px */
@@ -23,6 +22,7 @@
   --xl: 1.25rem;    /* 20px */
   --2xl: 1.5rem;    /* 24px */
   --3xl: 1.625rem;  /* 26px */
+  --4xl: 2rem;      /* 32px */
 }
 
 * {
@@ -39,4 +39,12 @@
 body, html {
   font-family: sf-pro-display, sans-serif;
   background-color: var(--background);
+}
+
+li {
+  list-style: none;
+}
+
+fieldset {
+  border: none;
 }
