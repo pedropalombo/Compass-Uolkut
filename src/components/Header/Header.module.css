@@ -11,10 +11,49 @@
     gap: 2.5rem;
 }
 
+.logoIcon {
+    display: fixed;
+}
+
+.navOptions {
+    padding: 2vh;
+    
+}
+
+.option {
+    position: relative;
+    margin: auto;
+    
+    margin-left: -30%;
+    
+}
+
+.inputContainer {
+    background-color: #EFF3F8;
+
+    border-radius: 7px;
+}
+
+.searchInput {
+    background-color: transparent;
+    border: none;
+
+    width: 15vw;
+}
+
+
+.userIcon, .lensIcon {
+    margin: auto;
+
+    width: 4vh;
+    max-width: 30px;
+}
+
 .nav li {
     color: var(--dark-10);
     font-size: var(--lg);
 }
+
 
 @media (max-width: 800px) {
     .header > nav {

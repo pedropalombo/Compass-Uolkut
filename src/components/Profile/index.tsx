@@ -3,10 +3,12 @@ import { Friends } from "../Friends";
 import styles from "./Profile.module.css";
 import IconImage from "../../assets/images/profileIcon.svg";
 import { ProfileInfo } from "../ProfileInfo";
+import { Header } from "../Header";
 
 export const Profile = () => {
     return (
         <section className="mainContainer">
+            <Header page="profile" />
             <section className="profileInfoContainer">
                 <ProfileInfo />
             </section>

@@ -37,9 +37,11 @@ export const FormLogin = () => {
         </fieldset>
 
         <fieldset className={styles.buttons_container}>
-          <button type="submit" className={styles.login_button}>
-            Entrar na conta
-          </button>
+          <Link to="/profile">
+            <button type="submit" className={styles.login_button}>
+              Entrar na conta
+            </button>
+          </Link>
 
           <Link to="/register">
             <button type="submit" className={styles.signup_button}>
