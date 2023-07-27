@@ -15,7 +15,6 @@
   --error-support: #F03D3D;
   --information-support: #E0E0E0;
   
-
   /* --- FONT SIZES --- */
   --sm: 0.875rem;   /* 14px */
   --md: 1rem;       /* 16px */
@@ -44,4 +43,8 @@ body, html {
 
 li {
   list-style: none;
+}
+
+fieldset {
+  border: none;
 }

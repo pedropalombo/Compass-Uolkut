@@ -5,9 +5,9 @@ import styles from "./Header.module.css";
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <a href="/">
+      <h1>
         <img src={logo} alt="" />
-      </a>
+      </h1>
 
       <nav className={styles.nav}>
         <ul>

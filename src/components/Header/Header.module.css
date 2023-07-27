@@ -3,7 +3,6 @@
     justify-content: space-around;
     align-items: center;
 
-    height: 5.75rem;
     background-color: var(--dark-30);
 }
 
@@ -15,4 +14,10 @@
 .nav li {
     color: var(--dark-10);
     font-size: var(--lg);
+}
+
+@media (max-width: 800px) {
+    .header > nav {
+        display: none;
+    }
 }
