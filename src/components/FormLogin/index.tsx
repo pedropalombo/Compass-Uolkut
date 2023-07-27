@@ -1,4 +1,5 @@
 import styles from "./FormLogin.module.css";
+import { Link } from "react-router-dom";
 
 export const FormLogin = () => {
   return (
@@ -27,9 +28,11 @@ export const FormLogin = () => {
           </label>
         </div>
         <button type="submit">Entrar na conta</button>
-        <button id={styles.create_acount} type="submit">
-          Criar uma conta
-        </button>
+        <Link to="/register">
+          <button id={styles.create_acount} type="submit">
+            Criar uma conta
+          </button>
+        </Link>
       </form>
       <a id={styles.forget_password} href="#">
         Esqueci a minha senha
