@@ -1,5 +1,6 @@
 import { FormHobbies } from "../FormHobbies/FormHobbies";
-import { Header } from "../Header";
+import { HeaderRoot } from "../Header/HeaderRoot";
+import { HeaderAuth } from "../Header/HeaderAuth";
 import { Footer } from "../Footer";
 import styles from "./CreateAccountDetail.module.css";
 import wallpaper from "../../assets/images/wallpaper.svg";
@@ -7,7 +8,9 @@ import wallpaper from "../../assets/images/wallpaper.svg";
 export const CreateAccountDetail = () => {
   return (
     <div className={styles.hobbies_container}>
-      <Header />
+      <HeaderRoot className="header_auth">
+        <HeaderAuth />
+      </HeaderRoot>
       <main className={styles.main}>
         <article>
           <aside>

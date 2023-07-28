@@ -1,13 +1,16 @@
 import { FormAccount } from "../FormAccount/FormAccount";
-import { Header } from "../Header";
+import { HeaderRoot } from "../Header/HeaderRoot";
 import { Footer } from "../Footer";
 import styles from "./CreateAccount.module.css";
 import wallpaper from "../../assets/images/wallpaper.svg";
+import { HeaderAuth } from "../Header/HeaderAuth";
 
 export const CreateAccount = () => {
   return (
     <div className={styles.create_container}>
-      <Header />
+      <HeaderRoot className="header_auth">
+        <HeaderAuth />
+      </HeaderRoot>
       <main className={styles.main}>
         <article>
           <aside>
