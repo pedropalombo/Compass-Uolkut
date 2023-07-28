@@ -1,0 +1,47 @@
+.communityContainer {
+    padding: 7px;
+    background-color: #FDFEFF;
+}
+
+.topicSection {
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.categoryName {
+    margin-right: 1vh;
+    font-size: 15px;
+}
+
+.seeAllBtn {
+    margin: 0;
+    padding: 0;
+
+    width: auto;
+
+    color: #ED2590;
+    background: transparent;
+
+    font-size: var(--vl);
+}
+
+.contentSection {
+    display:grid;
+
+    grid-template-columns: auto auto auto;
+
+}
+
+.contentBox {
+    align-items: center;
+    text-align: center;
+    max-width: 6vh;
+    margin: 0;
+    padding: 0;
+}
+
+.contentTitle {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}

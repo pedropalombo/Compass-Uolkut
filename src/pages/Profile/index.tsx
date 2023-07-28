@@ -1,4 +1,6 @@
 // import { Header } from "../../components/Header";
+import { Community } from "../../components/Community";
+import { Friends } from "../../components/Friends";
 import { Header } from "../../components/Header";
 import { ProfileInfo } from "../../components/ProfileInfo";
 import styles from "./Profile.module.css";
@@ -19,8 +21,15 @@ export const Profile = () => {
         <ProfileInfo />
 
         <section className={styles.isDesktop}>
-          <section>amigos</section>
-          <section>comunidade</section>
+          
+          <section>
+            <Friends />
+          </section>
+
+          <section>
+            <Community />
+          </section>
+
         </section>
 
         {/* Mobile */}
