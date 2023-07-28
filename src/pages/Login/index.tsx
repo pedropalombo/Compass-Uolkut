@@ -8,7 +8,10 @@ import styles from "./Login.module.css";
 export const DisplayLogin = () => {
   return (
     <div className={styles.login_container}>
-      <Header page="login" />
+      <Header.Root className="header__auth">
+        <Header.Auth />
+      </Header.Root>
+
       <main className={styles.main}>
         <article>
           <aside>

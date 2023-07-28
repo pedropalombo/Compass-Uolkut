@@ -1,0 +1,14 @@
+.header__auth {
+  background-color: pink;
+}
+
+.nav > ul {
+  display: flex;
+  gap: 2.5rem;
+}
+
+@media (max-width: 800px) {
+  nav {
+      display: none;
+  }
+}
