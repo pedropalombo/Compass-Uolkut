@@ -7,7 +7,7 @@
   padding: 3rem 1.5rem;
 }
 
-.header {
+.header_create {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,7 @@
   gap: 1rem;
 }
 
-.header h2 {
+.header_create h2 {
   color: var(--brand-color);
   font-size: var(--4xl);
 }
@@ -51,7 +51,7 @@
   gap: 0.5rem;
 }
 
-button{
+.button_continue{
   width: 100%;
   font-size: var(--lg);
   padding: 1rem 0;

@@ -1,0 +1,97 @@
+.container_hobbies{
+    display: flex;
+    flex-direction: column;
+    background: var(--dark-30);
+    border-radius: 16px;
+    min-width: 25rem;
+    padding: 3rem 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 50px;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track{
+  background: #FFFF;
+  
+}
+::-webkit-scrollbar-thumb{
+  background: #D9E6F7;
+  border-radius: 4px;   
+}
+
+
+.header_hobbies {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+}
+
+.header_hobbies h2 {
+    color: var(--brand-color);
+    font-size: var(--4xl);
+  }
+
+  .inputs_form_section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 26rem;
+    max-height: 35rem;
+  
+    margin-top: 2.5rem;
+  }
+  .inputs_form_section label {
+    gap: 1.5rem;
+  }
+
+  .inputs_form_section input {
+    font-size: var(--md);
+  }
+  
+  .inputs_form_section input[type="text"],input[type="name"] {
+    background-color: #EFF3F8;
+    padding: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    color: var(--dark-10);
+  }
+
+  .inputs_form_section select {
+    background-color: #EFF3F8;
+    padding: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    color: var(--dark-10);
+  }
+
+  .inputs_form_section textarea {
+    background-color: #EFF3F8;
+    padding: 16px;
+    border: none;
+    width: 100%;
+    border-radius: 8px;
+    color: var(--dark-10);
+    resize: none;
+  }
+
+  .button_continue{
+    width: 100%;
+    font-size: var(--lg);
+    padding: 1rem 0;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--brand-color);
+    color: white;
+    
+  }
+
+  .scroll{
+    overflow-y: scroll;
+  }

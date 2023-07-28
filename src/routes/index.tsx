@@ -5,7 +5,6 @@ import { Profile } from "../pages/Profile";
 import { CreateAccount } from "../components/CreateAccount/CreateAccount";
 import { CreateAccountDetail } from "../components/CreateAccountDetail/CreateAccountDetail";
 
-
 const routes = createBrowserRouter([
   {
     path: "/",

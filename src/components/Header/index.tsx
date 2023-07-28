@@ -3,6 +3,7 @@ import zoom from "../../assets/images/MagnifyingGlass.svg";
 import styles from "./Header.module.css";
 import profileIcon from "../../assets/images/profileIcon.svg";
 import arrowDown from "../../assets/images/CaretDown.svg";
+
 export const Header = (props) => {
   return (
     <header className={styles.header}>
@@ -11,7 +12,7 @@ export const Header = (props) => {
       </h1>
 
       <nav className={styles.nav}>
-        {props.page.includes("profile") &&
+        {props.page.includes("profile") && (
           <ul className={styles.navOptions}>
             <li className={styles.option}>Início</li>
             <li className={styles.option}>Perfil</li>
@@ -33,15 +34,14 @@ export const Header = (props) => {
 
               <img src={arrowDown} />
             </div>
-
           </ul>
-        }
-        {!props.page.includes("profile") &&
+        )}
+        {!props.page.includes("profile") && (
           <ul>
             <li>Sobre o Orkut</li>
             <li>Centro de segurança</li>
           </ul>
-        }
+        )}
       </nav>
     </header>
   );
