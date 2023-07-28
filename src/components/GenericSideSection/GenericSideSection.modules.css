@@ -1,14 +1,11 @@
 .communityContainer {
     padding: 7px;
     background-color: #FDFEFF;
-
-    border-radius: 10px;
 }
 
 .topicSection {
     justify-content: space-between;
-    
-    margin-bottom: 2vh;
+    gap: 5px;
 }
 
 .categoryName {
@@ -17,9 +14,6 @@
 }
 
 .seeAllBtn {
-    float: right;
-
-    margin-left: -20%;
     margin: 0;
     padding: 0;
 
@@ -34,17 +28,14 @@
 .contentSection {
     display:grid;
 
-    grid-template-columns: auto auto auto;    
+    grid-template-columns: auto auto auto;
 
 }
 
 .contentBox {
     align-items: center;
     text-align: center;
-
-    width: 7vw;
-    height: 6vw;
-
+    max-width: 6vh;
     margin: 0;
     padding: 0;
 }

@@ -2,49 +2,48 @@ import styles from "./Community.module.css";
 import iconPlaceholder from "../../assets/images/Heart.svg";
 
 export function Community() {
-
   interface DataStandard {
-    title: string,
-    src: string
+    title: string;
+    src: string;
   }
 
   const sectionContent: DataStandard[] = [
     {
-      title: 'Carros',
+      title: "Carros",
       src: iconPlaceholder,
     },
     {
-      title: 'Desenhos',
+      title: "Desenhos",
       src: iconPlaceholder,
     },
     {
-      title: 'Crazy',
+      title: "Crazy",
       src: iconPlaceholder,
     },
     {
-      title: 'Fofos',
+      title: "Fofos",
       src: iconPlaceholder,
     },
     {
-      title: 'Animes',
+      title: "Animes",
       src: iconPlaceholder,
     },
     {
-      title: 'Leitura',
+      title: "Leitura",
       src: iconPlaceholder,
     },
     {
-      title: 'Meu ovo',
+      title: "Meu ovo",
       src: iconPlaceholder,
     },
     {
-      title: 'My books',
+      title: "My books",
       src: iconPlaceholder,
     },
     {
-      title: 'Cafeeee',
+      title: "Cafeeee",
       src: iconPlaceholder,
-    }
+    },
   ];
 
   //renders data as elements
@@ -52,31 +51,31 @@ export function Community() {
     return sectionContent.map((element, key) => {
       return (
         <div key={key} className={styles.contentBox}>
-          <img className={styles.contentIcon} src={element.src}/>
+          <img className={styles.contentIcon} src={element.src} />
           <p className={styles.contentTitle}>{element.title}</p>
         </div>
       );
     });
-  }
+  };
 
   return (
     <section className={styles.communityContainer}>
-
       <section className={styles.topicSection}>
-        <span className={styles.categoryName}>
-          Communidade (number)
-        </span>
+        <span className={styles.categoryName}>Communidade (number)</span>
 
-        <button className={styles.seeAllBtn} onClick={() => { alert('calma la ;)') }}>
+        <button
+          className={styles.seeAllBtn}
+          onClick={() => {
+            alert("calma la ;)");
+          }}
+        >
           Ver todos
         </button>
-
       </section>
 
       <section className={styles.contentSection}>
         {renderSectionContent()}
       </section>
-
     </section>
   );
 }
