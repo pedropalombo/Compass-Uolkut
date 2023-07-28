@@ -1,7 +1,3 @@
 export function Community() {
-    return (
-        <section className="communityContainer">
-
-        </section>
-    );
+  return <section className="communityContainer"></section>;
 }

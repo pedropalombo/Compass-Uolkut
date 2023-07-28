@@ -1,7 +1,3 @@
 export function Friends() {
-    return (
-        <section className="friendContainer">
-
-        </section>
-    );
+  return <section className="friendContainer"></section>;
 }

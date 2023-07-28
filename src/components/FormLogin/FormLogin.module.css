@@ -22,7 +22,7 @@
 
 .inputs_form_section {
     display: flex;
-    flex-direction: column;
+    flex-direction: column    ;
     gap: 1.5rem;
 
     margin-top: 2.5rem;
