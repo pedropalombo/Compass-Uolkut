@@ -1,7 +1,6 @@
 import { Header } from "../../components/Header";
 import { FormLogin } from "../../components/FormLogin";
 import { Footer } from "../../components/Footer";
-
 import wallpaper from "../../assets/images/wallpaper.svg";
 import styles from "./Login.module.css";
 
