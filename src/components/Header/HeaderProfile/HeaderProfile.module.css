@@ -1,3 +1,43 @@
 .nav ul {
   display: flex;
+  gap: 2.5rem;
+}
+
+.nav ul li {
+  color: var(--dark-10);
+  font-size: var(--lg);
+}
+
+.nav ul li:hover {
+  color: var(--brand-color);
+  cursor: pointer;
+}
+
+.settings_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.settings_container img {
+  width: clamp(1.5rem, 5vw, 2.5rem);
+  object-fit: cover;
+}
+
+.settings_container p {
+  color: var(--dark-10);
+}
+
+.settings_container p + img {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .settings_container {
+    gap: 0.5rem;
+  }
+
+  .settings_container p {
+    display: none;
+  }
 }

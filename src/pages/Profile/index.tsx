@@ -1,6 +1,8 @@
 // import { Header } from "../../components/Header";
 import { Header } from "../../components/Header";
+import { InputSearch } from "../../components/InputSearch";
 import { ProfileInfo } from "../../components/ProfileInfo";
+import { UserProfile } from "../../components/UserProfile";
 import styles from "./Profile.module.css";
 
 export const Profile = () => {
@@ -11,10 +13,9 @@ export const Profile = () => {
       </Header.Root>
 
       <main className={styles.main}>
-        <section>
-          <section>Solteiro, Brasil</section>
-          <button>Editar meu perfil</button>
-        </section>
+        <InputSearch className="isMobile" />
+
+        <UserProfile />
 
         <ProfileInfo />
 
