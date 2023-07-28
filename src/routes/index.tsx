@@ -2,6 +2,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import { DisplayLogin } from "../pages/Login";
 import { Profile } from "../pages/Profile";
+import { CreateAccount } from "../components/CreateAccount/CreateAccount";
+import { CreateAccountDetail } from "../components/CreateAccountDetail/CreateAccountDetail";
+
 
 const routes = createBrowserRouter([
   {
@@ -13,6 +16,11 @@ const routes = createBrowserRouter([
       },
       {
         path: "register",
+        element: <CreateAccount />,
+      },
+      {
+        path: "register/details",
+        element: <CreateAccountDetail />,
       },
       {
         path: "profile",
