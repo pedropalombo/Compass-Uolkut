@@ -16,7 +16,7 @@
     border-radius: 0.938rem;
 }
 
-#circle_image_user{
+.circle_image_user{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,23 +29,23 @@
     background-size: cover;
 }
 
-#image_user{
+.image_user{
     position: center center;
     height: 10.625rem;
     width: 10.625rem;
 }
 
-#name_user{
+.name_user{
     margin-top: var(--xl);
     font-size: var(--2xl);
 }
 
-#desc_user{
+.desc_user{
     margin-top: 0.938rem;
     font-size: var(--lg);
 }
 
-#edit_profile{
+.edit_profile{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,9 +54,12 @@
     background-color: var(--dark-40);
     border-radius: 0.75rem;
     margin-top: var(--4xl);
-}
-
-#text_edit_profile{
+    border: 1px solid var(--dark-40);
+    cursor: pointer;
     font-size: var(--lg);
     color: var(--brand-color);
+}
+.edit_profile:hover{
+    transition: .8s;
+    border: 1px solid var(--brand-color);
 }
