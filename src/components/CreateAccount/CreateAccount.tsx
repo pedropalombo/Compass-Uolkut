@@ -1,5 +1,7 @@
 import { FormAccount } from "../FormAccount/FormAccount";
+
 import { HeaderRoot } from "../Header/HeaderRoot";
+
 import { Footer } from "../Footer";
 import styles from "./CreateAccount.module.css";
 import wallpaper from "../../assets/images/wallpaper.svg";

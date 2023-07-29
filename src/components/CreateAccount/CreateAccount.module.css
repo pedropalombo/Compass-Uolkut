@@ -2,7 +2,7 @@
     display: grid;
     height: 100vh;
  
-    grid-template-rows: 5.75rem auto 3rem;
+    /* grid-template-rows: 5.75rem auto 3rem; */
  }
  
  .main {

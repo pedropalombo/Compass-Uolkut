@@ -1,4 +1,5 @@
 // import { Header } from "../../components/Header";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { InputSearch } from "../../components/InputSearch";
 import { ProfileInfo } from "../../components/ProfileInfo";
@@ -13,12 +14,15 @@ export const Profile = () => {
       </Header.Root>
 
       <main className={styles.main}>
+
+        <section>
+          <UserProfile />
+          <Button isNavigation path="edit" text="Editar Perfil" />
+        </section>
+
         <InputSearch className="isMobile" />
 
-        <UserProfile />
-
         <ProfileInfo />
-
         <section className={styles.isDesktop}>
           <section>amigos</section>
           <section>comunidade</section>

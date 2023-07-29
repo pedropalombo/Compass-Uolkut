@@ -12,6 +12,7 @@
     align-items: center;
     height: 20.875rem;
     width: 17.5rem;
+    
     background-color: var(--dark-40);
     border-radius: 0.938rem;
 }
@@ -31,8 +32,6 @@
 
 .image_user{
     position: center center;
-    height: 10.625rem;
-    width: 10.625rem;
 }
 
 .name_user{
@@ -43,23 +42,4 @@
 .desc_user{
     margin-top: 0.938rem;
     font-size: var(--lg);
-}
-
-.edit_profile{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 17.5rem;
-    height: 3.5rem;
-    background-color: var(--dark-40);
-    border-radius: 0.75rem;
-    margin-top: var(--4xl);
-    border: 1px solid var(--dark-40);
-    cursor: pointer;
-    font-size: var(--lg);
-    color: var(--brand-color);
-}
-.edit_profile:hover{
-    transition: .8s;
-    border: 1px solid var(--brand-color);
 }
