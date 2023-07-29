@@ -4,7 +4,7 @@ import styles from "./HeaderRoot.module.css";
 
 interface HeaderRootProps {
   className: string;
-  children: ReactNode;
+  children?: ReactNode;
 }
 
 export const HeaderRoot = ({ className, children }: HeaderRootProps) => {
