@@ -47,10 +47,12 @@
   }
   .inputs_form_section label {
     gap: 1.5rem;
+    
   }
 
   .inputs_form_section input {
     font-size: var(--md);
+    margin-bottom: 1rem;
   }
   
   .inputs_form_section input[type="text"],input[type="name"] {
@@ -69,6 +71,7 @@
     width: 100%;
     border-radius: 8px;
     color: var(--dark-10);
+    margin-bottom: 1rem;
   }
 
   .inputs_form_section textarea {
@@ -79,6 +82,7 @@
     border-radius: 8px;
     color: var(--dark-10);
     resize: none;
+    margin-bottom: 1rem;
   }
 
   .button_continue{

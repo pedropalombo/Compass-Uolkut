@@ -8,7 +8,7 @@ import wallpaper from "../../assets/images/wallpaper.svg";
 export const CreateAccountDetail = () => {
   return (
     <div className={styles.hobbies_container}>
-      <HeaderRoot className="header_auth">
+      <HeaderRoot className="header__auth">
         <HeaderAuth />
       </HeaderRoot>
       <main className={styles.main}>
