@@ -1,6 +1,8 @@
 // import { Header } from "../../components/Header";
+import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { ProfileInfo } from "../../components/ProfileInfo";
+import { UserProfile } from "../../components/UserProfile";
 import styles from "./Profile.module.css";
 
 export const Profile = () => {
@@ -12,12 +14,10 @@ export const Profile = () => {
 
       <main className={styles.main}>
         <section>
-          <section>Solteiro, Brasil</section>
-          <button>Editar meu perfil</button>
+          <UserProfile />
+          <Button isNavigation path="edit" text="Editar Perfil" />
         </section>
-
         <ProfileInfo />
-
         <section className={styles.isDesktop}>
           <section>amigos</section>
           <section>comunidade</section>

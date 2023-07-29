@@ -1,0 +1,27 @@
+.edit_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17.5rem;
+    height: 3.5rem;
+    background-color: var(--dark-40);
+    border-radius: 0.75rem;
+    margin-top: var(--4xl);
+    border: 1px solid var(--dark-40);
+    cursor: pointer;
+    font-size: var(--lg     );
+    color: var(--brand-color);
+}
+.edit_profile:hover{
+    transition: .8s;
+    border: 1px solid var(--brand-color);
+}
+.save_edit{
+    background-color: var(--brand-color);
+    color: var(--dark-30);
+  }
+  
+  .save_edit:hover{
+    transition: 1s;
+    opacity: 10;
+  }

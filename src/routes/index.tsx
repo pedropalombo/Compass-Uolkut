@@ -4,6 +4,7 @@ import { DisplayLogin } from "../pages/Login";
 import { Profile } from "../pages/Profile";
 import { CreateAccount } from "../components/CreateAccount/CreateAccount";
 import { CreateAccountDetail } from "../components/CreateAccountDetail/CreateAccountDetail";
+import { UserEdit } from "../pages/UserEdit";
 
 const routes = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const routes = createBrowserRouter([
       {
         path: "profile",
         element: <Profile />,
+      },
+      {
+        path: "profile/edit",
+        element: <UserEdit />,
       },
     ],
   },

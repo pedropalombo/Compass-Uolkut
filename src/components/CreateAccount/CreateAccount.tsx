@@ -1,5 +1,4 @@
 import { FormAccount } from "../FormAccount/FormAccount";
-import { Header } from "../Header";
 import { Footer } from "../Footer";
 import styles from "./CreateAccount.module.css";
 import wallpaper from "../../assets/images/wallpaper.svg";
@@ -7,7 +6,6 @@ import wallpaper from "../../assets/images/wallpaper.svg";
 export const CreateAccount = () => {
   return (
     <div className={styles.login_container}>
-      <Header />
       <main className={styles.main}>
         <article>
           <aside>

@@ -10,7 +10,6 @@ export const UserProfile = () => {
         <p className={styles.name_user}>Iuri Silva</p>
         <p className={styles.desc_user}>Solteiro, Brasil</p>
       </div>
-      <button className={styles.edit_profile}>Editar meu perfil</button>
     </section>
   );
 };
