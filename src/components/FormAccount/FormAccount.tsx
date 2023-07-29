@@ -1,53 +1,53 @@
 import styles from "./FormAccount.module.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/logo-orkut-simples.svg";
 
 export const FormAccount = () => {
+  const navigate = useNavigate();
+  function Formtest(event) {
+    event.preventDefault();
+    navigate("/register/details");
+  }
   return (
     <section className={styles.container_form}>
-      <header className={styles.header}>
+      <header className={styles.header_create}>
         <img src={logo} alt="" />
         <h2>Acesse o Orkut </h2>
       </header>
-      <form>
+      <form action="/register/details">
         <fieldset className={styles.inputs_form_section}>
           <label>
-            Digite seu nome Completo
-            <input
-              type="name"
-              name="name"
-              id="name"
-              placeholder="José Josaias Junior"
-            />
+            Seu nome
+            <input type="name" placeholder="Nome completo" required />
           </label>
           <label>
-            Digite seu email
-            <input type="email" placeholder="JJJzezinho@gmail.com" />
+            E-mail
+            <input type="email" placeholder="exemplo@exemplo.com" required />
           </label>
           <label>
-            Digite sua data de nascimento
-            <input type="date" name="date" id="date" />
+            Data de nascimento
+            <input type="date" required />
           </label>
           <label>
-            Crie uma senha
+            Senha
             <input
               type="password"
-              name="password"
-              id="password"
               placeholder="Pelo menos 6 caracteres"
+              minLength={6}
+              required
             />
           </label>
           <label>
-            Digite a senha novamente
-            <input type="password" name="password" id="password" />
+            Insira sua senha novamente
+            <input type="password" required minLength={6} />
           </label>
-          <Link to={"/register/details"}>
-            <button type="submit"> Continuar </button>
-          </Link>
+
+          <button onSubmit={Formtest} className={styles.button_continue}>
+            Continuar
+          </button>
           <Link to={"/"}>
-            <button type="submit" className={styles.button_back_login}>
-              {" "}
-              Já tenho uma conta{" "}
+            <button className={styles.button_back_login}>
+              {"Já tenho uma conta "}
             </button>
           </Link>
         </fieldset>
