@@ -10,7 +10,7 @@ import { HeaderAuth } from "../Header/HeaderAuth";
 export const CreateAccount = () => {
   return (
     <div className={styles.create_container}>
-      <HeaderRoot className="header_auth">
+      <HeaderRoot className="header__auth">
         <HeaderAuth />
       </HeaderRoot>
       <main className={styles.main}>
