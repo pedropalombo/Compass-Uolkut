@@ -41,7 +41,7 @@ export const FormAccount = () => {
           <input
             type="text"
             id="city-state"
-            placeholder="Pernambuco - CE"
+            placeholder="Recife - PE"
             required
           />
         </p>
@@ -50,7 +50,7 @@ export const FormAccount = () => {
           <input
             type="password"
             id="password"
-            placeholder="********"
+            placeholder="Pelo menos 8 caracteres"
             minLength={8}
             required
           />
