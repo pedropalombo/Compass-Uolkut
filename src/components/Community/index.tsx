@@ -1,5 +1,4 @@
 import styles from "./Community.module.css";
-import iconPlaceholder from "../../assets/images/Heart.svg";
 
 export function Community() {
   interface DataStandard {
@@ -10,39 +9,39 @@ export function Community() {
   const sectionContent: DataStandard[] = [
     {
       title: "Carros",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/bX3Ifjp.png",
     },
     {
       title: "Desenhos",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/ROqwqw4.png",
     },
     {
       title: "Crazy",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/GejNWt4.png",
     },
     {
       title: "Fofos",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/nrIosPU.png",
     },
     {
       title: "Animes",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/qCvbyYR.png",
     },
     {
       title: "Leitura",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/DCN6mIZ.png",
     },
     {
       title: "Meu ovo",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/gwnknXd.png",
     },
     {
       title: "My books",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/tBIGWCc.png",
     },
     {
       title: "Cafeeee",
-      src: iconPlaceholder,
+      src: "https://i.imgur.com/7N7C9nu.png",
     },
   ];
 
@@ -61,7 +60,7 @@ export function Community() {
   return (
     <section className={styles.communityContainer}>
       <section className={styles.topicSection}>
-        <span className={styles.categoryName}>Communidade (number)</span>
+        <span className={styles.categoryName}>Comunidade (number)</span>
 
         <button
           className={styles.seeAllBtn}

@@ -16,6 +16,16 @@
   padding: 1.25rem;
 }
 
+.rightContainer {
+  display: grid;
+  align-content: space-between;
+
+}
+
+.sideCategory {
+  
+}
+
 /* TESTES, TEMPORÁRIO */
 @media (max-width: 800px) {
   .main {

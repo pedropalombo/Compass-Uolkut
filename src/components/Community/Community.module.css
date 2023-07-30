@@ -3,38 +3,49 @@
     background-color: #FDFEFF;
 
     border-radius: 10px;
+
+    max-width: 280px;
+    height: 410px;
+
 }
 
 .topicSection {
-    justify-content: space-between;
-    
-    margin-bottom: 2vh;
+    display: flex;
+
+    justify-content: space-around;
+
+    font-weight: 500;
+
+    margin-top: 0.5em;
+    margin-bottom: 1em;
 }
 
 .categoryName {
-    margin-right: 1vh;
-    font-size: 15px;
+    font-size: 0.85vw;
 }
 
 .seeAllBtn {
-    float: right;
-
-    margin-left: -20%;
     margin: 0;
     padding: 0;
+
+    border: none;
 
     width: auto;
 
     color: #ED2590;
     background: transparent;
 
-    font-size: var(--vl);
+    font-size: 0.8vw;
 }
 
 .contentSection {
-    display:grid;
+    display: grid;
 
-    grid-template-columns: auto auto auto;    
+    justify-items: center;
+
+    justify-content: space-around;
+
+    grid-template-columns: auto auto auto;
 
 }
 
@@ -42,15 +53,27 @@
     align-items: center;
     text-align: center;
 
-    width: 7vw;
-    height: 6vw;
-
     margin: 0;
     padding: 0;
+
+    width: 56px;
+    height: 81px;
+}
+
+.contentIcon {
+    border-radius: 5px;
+
+    width: 4vw;
+    min-width: 30px;
+    max-width: 50px;
 }
 
 .contentTitle {
     width: auto;
     margin: 0;
     padding: 0;
+
+    font-size: 0.8vw;
+    font-weight: 400;
+
 }

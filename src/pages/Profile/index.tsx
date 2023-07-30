@@ -24,23 +24,27 @@ export const Profile = () => {
 
         <InputSearch className="isMobile" />
 
-        <ProfileInfo />
-        <section className={styles.isDesktop}>
+        <section className={`${styles.isMobile} ${styles.dois}`}>
+          <Friends />
+        </section>
 
-          <section>
+        <ProfileInfo />
+        <section className={`${styles.isDesktop} ${styles.rightContainer}`}>
+
+          <section className={styles.sideCategory}>
             <Friends />
           </section>
 
-          <section>
+          <section className={styles.sideCategory}>
             <Community />
           </section>
 
         </section>
 
         {/* Mobile */}
-        <section className={`${styles.isMobile} ${styles.dois}`}>
+        {/*<section className={`${styles.isMobile} ${styles.dois}`}>
           hahahah amigos
-        </section>
+        </section>*/}
         <section className={`${styles.isMobile} ${styles.quatro}`}>
           hoohohoh comunidade
         </section>
