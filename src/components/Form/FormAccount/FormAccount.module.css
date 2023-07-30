@@ -1,50 +1,5 @@
-.inputs_form_section label {
-  gap: 1.5rem;
-}
-
-.inputs_form_section input {
-  font-size: var(--md);
-}
-
-.inputs_form_section input[type="email"],
-input[type="password"],
-input[type="date"],
-input[type="name"] {
-  background-color: #EFF3F8;
-  padding: 16px;
-  border: none;
-  width: 100%;
-  border-radius: 8px;
-  color: var(--dark-10);
-}
-
-.checkbox_container {
+.formContainer p {
   display: flex;
-  justify-content: flex-start;
-  gap: 0.5rem;
-}
-
-.button_continue {
-  width: 100%;
-  font-size: var(--lg);
-  padding: 1rem 0;
-  border: none;
-  border-radius: 8px;
-  background-color: var(--brand-color);
-  color: white;
-
-}
-
-.button_back_login {
-  width: 100%;
-  font-size: var(--lg);
-  padding: 1rem 0;
-  border: none;
-  border-radius: 8px;
-  background-color: #EFF3F8;
-  color: var(--brand-color);
-}
-
-button:hover {
-  cursor: pointer;
+  flex-direction: column;
+  gap: 0.25rem;
 }

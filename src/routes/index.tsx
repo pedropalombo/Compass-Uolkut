@@ -23,7 +23,7 @@ const routes = createBrowserRouter([
             element: <Register />,
           },
           {
-            path: "/register/details",
+            path: "register/details",
             element: <RegisterDetails />,
           },
         ],

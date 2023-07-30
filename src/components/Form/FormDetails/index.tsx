@@ -1,97 +1,100 @@
 import { Form, Link } from "react-router-dom";
+
 import styles from "./FormDetails.module.css";
 
 export const FormDetails = () => {
   return (
-    <Form action="/profile">
+    <Form className={styles.formDetailsContainer}>
       <fieldset>
-        <div className={styles.scroll}>
-          <label>
-            Quem sou eu
-            <textarea
-              name=""
-              id=""
-              placeholder="Fale um pouco sobre você"
-              required
-            ></textarea>
-          </label>
-          <label>
-            Cidade e Estado
-            <input
-              type="name"
-              name=""
-              id=""
-              placeholder="Ex: Recife-PE"
-              required
-            />
-          </label>
-          <label>
-            Interesses
-            <input
-              type="text"
-              placeholder="Fale sobre as coisas que você gosta"
-              required
-            />
-          </label>
-          <label>
-            Relacionamento
-            <select required>
-              <option disabled selected value="">
-                Selecione uma opção
-              </option>
-              <option>Solteiro</option>
-              <option>Casado</option>
-              <option>Viúvo</option>
-            </select>
-          </label>
-          <label>
-            Tem filhos?
-            <select required>
-              <option disabled selected value="">
-                Selecione uma opção
-              </option>
-              <option> Sim</option>
-              <option> Não</option>
-            </select>
-          </label>
-          <label>
-            Você fuma?
-            <select required>
-              <option disabled selected value="">
-                Selecione uma opção
-              </option>
-              <option> Sim</option>
-              <option> Não</option>
-              <option> Raramente</option>
-            </select>
-          </label>
-          <label>
-            Você bebe?
-            <select required>
-              <option disabled selected value="">
-                Selecione uma opção
-              </option>
-              <option> Sim</option>
-              <option> Não</option>
-              <option> Raramente</option>
-            </select>
-          </label>
-          <label>
-            Filmes Favoritos
-            <textarea required />
-          </label>
-          <label>
-            Músicas Favoritas
-            <textarea required />
-          </label>
-        </div>
+        <p>
+          <label htmlFor="about-me">Quem sou eu</label>
+          <textarea id="about-me" placeholder="Me chamo..." required></textarea>
+        </p>
 
-        <button type="submit" className={styles.button_continue}>
-          Finalizar cadastro
-        </button>
+        <p>
+          <label>Interesses</label>
+          <input
+            type="text"
+            placeholder="Ler livros, ouvir músicas..."
+            required
+          />
+        </p>
 
-        <Link to={"/register"}>
-          <button className={styles.button_continue}>Voltar</button>
+        <p>
+          <label>Status de Relacionamento</label>
+          <select required>
+            <option disabled selected value="">
+              Selecione uma opção
+            </option>
+            <option>Solteiro</option>
+            <option>Casado</option>
+            <option>Viúvo</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Tem filhos?</label>
+          <select required>
+            <option disabled selected value="">
+              Selecione uma opção
+            </option>
+            <option> Sim</option>
+            <option> Não</option>
+          </select>
+        </p>
+
+        <p>
+          <legend>Hábitos</legend>
+          <div>
+            <input type="checkbox" id="smoke" />
+            <label htmlFor="smoke">Fuma</label>
+          </div>
+          <div>
+            <input type="checkbox" id="drink" />
+            <label htmlFor="drink">Bebe</label>
+          </div>
+        </p>
+
+        <p>
+          <label>Você fuma?</label>
+          <select required>
+            <option disabled selected value="">
+              Selecione uma opção
+            </option>
+            <option> Sim</option>
+            <option> Não</option>
+            <option> Raramente</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Você bebe?</label>
+          <select required>
+            <option disabled selected value="">
+              Selecione uma opção
+            </option>
+            <option> Sim</option>
+            <option> Não</option>
+            <option> Raramente</option>
+          </select>
+        </p>
+
+        <p>
+          <label>Filmes Favoritos</label>
+          <textarea required />
+        </p>
+
+        <p>
+          <label>Músicas Favoritas</label>
+          <textarea required />
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <button>Finalizar cadastro</button>
+
+        <Link to="/register">
+          <button>Voltar</button>
         </Link>
       </fieldset>
     </Form>

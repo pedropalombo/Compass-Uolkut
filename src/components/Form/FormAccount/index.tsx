@@ -1,10 +1,17 @@
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useNavigate } from "react-router-dom";
 import styles from "./FormAccount.module.css";
 
 export const FormAccount = () => {
+  const navigate = useNavigate();
+
+  const handleFormSubmit = (event: React.SyntheticEvent) => {
+    event.preventDefault();
+    navigate("details");
+  };
+
   return (
-    <Form action="/register/details" className={styles.formContainer}>
-      <fieldset className={styles.inputs_form_section}>
+    <Form onSubmit={handleFormSubmit} className={styles.formContainer}>
+      <fieldset>
         <p>
           <label htmlFor="name">Nome</label>
           <input
@@ -58,13 +65,13 @@ export const FormAccount = () => {
             minLength={8}
           />
         </p>
+      </fieldset>
 
-        <button type="submit" className={styles.button_continue}>
-          Continuar
-        </button>
+      <fieldset>
+        <button>Continuar</button>
 
         <Link to="/">
-          <button>"Já tenho uma conta "</button>
+          <button>Já tenho uma conta</button>
         </Link>
       </fieldset>
     </Form>
