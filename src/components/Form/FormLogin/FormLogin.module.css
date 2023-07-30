@@ -1,0 +1,42 @@
+.formLoginContainer {
+    overflow-y: hidden;
+}
+
+.formLoginContainer fieldset a+a {
+    color: var(--brand-color);
+    font-size: var(--sm);
+    align-self: center;
+    border-bottom: 1px solid var(--brand-color);
+    letter-spacing: -1px;
+}
+
+.checkboxContainer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.checkboxContainer input {
+    all: unset;
+    border-style: solid transparent;
+    border-radius: 6px;
+
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 3px;
+
+    border-style: solid transparent;
+    border-radius: 6px;
+    outline: 1px solid #DCDCDC;
+    outline-offset: 3px;
+    box-shadow: 0px 0px 0px 3px var(--dark-25);
+}
+
+.checkboxContainer input:hover {
+    background-color: var(--brand-color);
+    cursor: pointer;
+}
+
+.checkboxContainer label {
+    color: var(--dark-10);
+}
