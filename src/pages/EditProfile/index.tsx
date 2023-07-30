@@ -1,8 +1,10 @@
 import { Button } from "../../components/Button";
 import { UserProfile } from "../../components/UserProfile";
-import styles from "./UserEdit.module.css";
+import styles from "./EditProfile.module.css";
 
-export const UserEdit = () => {
+export const EditProfile = () => {
+  console.log("oi");
+
   return (
     <section className={styles.container_user_edit_image_user}>
       <div className={styles.container_profile}>

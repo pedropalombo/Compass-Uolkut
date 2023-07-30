@@ -11,7 +11,7 @@ import styles from "./Profile.module.css";
 export const Profile = () => {
   return (
     <div className={styles.profile_container}>
-      <Header.Root className="header__profile">
+      <Header.Root>
         <Header.Profile />
       </Header.Root>
 

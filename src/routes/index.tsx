@@ -1,34 +1,45 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { DisplayLogin } from "../pages/Login";
+import { AuthLayout } from "../layouts/AuthLayout";
 import { Profile } from "../pages/Profile";
-import { CreateAccount } from "../components/CreateAccount/CreateAccount";
-import { CreateAccountDetail } from "../components/CreateAccountDetail/CreateAccountDetail";
-import { UserEdit } from "../pages/UserEdit";
+import { Register } from "../pages/Register";
+import { RegisterDetails } from "../pages/RegisterDetails";
+import { Login } from "../pages/Login";
+import { EditProfile } from "../pages/EditProfile";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     children: [
       {
-        index: true,
-        element: <DisplayLogin />,
-      },
-      {
-        path: "register",
-        element: <CreateAccount />,
-      },
-      {
-        path: "register/details",
-        element: <CreateAccountDetail />,
+        element: <AuthLayout />,
+        children: [
+          {
+            index: true,
+            element: <Login />,
+          },
+          {
+            path: "register",
+            element: <Register />,
+          },
+          {
+            path: "register/details",
+            element: <RegisterDetails />,
+          },
+        ],
       },
       {
         path: "profile",
-        element: <Profile />,
-      },
-      {
-        path: "profile/edit",
-        element: <UserEdit />,
+        children: [
+          {
+            index: true,
+            element: <Profile />,
+          },
+          {
+            path: "edit",
+            element: <EditProfile />,
+          },
+        ],
       },
     ],
   },
