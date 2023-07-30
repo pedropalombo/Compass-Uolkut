@@ -1,10 +1,10 @@
 import { Form } from "../../components/Form";
 
-export const Login = () => {
+export const Register = () => {
   return (
     <>
       <Form.Root>
-        <Form.Login />
+        <Form.Account />
       </Form.Root>
     </>
   );

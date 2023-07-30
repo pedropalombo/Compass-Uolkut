@@ -6,14 +6,6 @@
   height: clamp(3.75rem, 10vw, 5.75rem);
 }
 
-.header__auth {
-  justify-content: space-evenly;
-}
-
-.header__profile {
-  justify-content: space-evenly;
-}
-
 .header h1 {
   display: flex;
   align-items: center;
