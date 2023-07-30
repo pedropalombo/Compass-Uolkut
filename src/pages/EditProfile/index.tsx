@@ -6,11 +6,9 @@ export const EditProfile = () => {
   console.log("oi");
 
   return (
-    <section className={styles.container_user_edit_image_user}>
-      <div className={styles.container_profile}>
+    <section className={styles.container_all_elements}>
+      <div className={styles.user_profile}>
         <UserProfile />
-        <Button />
-        <Button text="Voltar" isNavigation path="/profile" />
       </div>
       <section className={styles.container_user_edit}>
         <dl className={styles.user_details}>
@@ -75,6 +73,15 @@ export const EditProfile = () => {
           </div>
         </dl>
       </section>
+      <div className={styles.container_profile}>
+        <UserProfile />
+        <Button />
+        <Button text="Voltar" isNavigation path="/profile" />
+      </div>
+      <div className={styles.container_profile_mobile}>
+        <Button />
+        <Button text="Voltar" isNavigation path="/profile" />
+      </div>
     </section>
   );
 };

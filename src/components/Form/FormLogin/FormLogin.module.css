@@ -9,7 +9,6 @@
     border-bottom: 1px solid var(--brand-color);
     letter-spacing: -1px;
 }
-
 .checkboxContainer {
     display: flex;
     justify-content: flex-start;
@@ -39,4 +38,8 @@
 
 .checkboxContainer label {
     color: var(--dark-10);
+}
+
+.button_login{
+    background-color: var(--brand-color);
 }
