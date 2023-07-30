@@ -16,10 +16,16 @@ export const Profile = () => {
       </Header.Root>
 
       <main className={styles.main}>
+        <InputSearch className="isMobile" />
 
         <section>
-          <UserProfile />
+          <UserProfile className="" />
           <Button isNavigation path="edit" text="Editar Perfil" />
+
+          {/* Mobile */}
+          <section className={`${styles.isMobile} ${styles.dois}`}>
+            hahahah amigos
+          </section>
         </section>
 
         <InputSearch className="isMobile" />
@@ -42,9 +48,6 @@ export const Profile = () => {
         </section>
 
         {/* Mobile */}
-        {/*<section className={`${styles.isMobile} ${styles.dois}`}>
-          hahahah amigos
-        </section>*/}
         <section className={`${styles.isMobile} ${styles.quatro}`}>
           hoohohoh comunidade
         </section>

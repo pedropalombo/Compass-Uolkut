@@ -1,8 +1,8 @@
 .header {
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: var(--dark-30);
-
   height: clamp(3.75rem, 10vw, 5.75rem);
 }
 

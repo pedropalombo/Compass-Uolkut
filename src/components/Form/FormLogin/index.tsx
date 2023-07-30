@@ -25,7 +25,7 @@ export const FormLogin = () => {
       </fieldset>
 
       <fieldset>
-        <button>Entrar na conta</button>
+        <button className="button_login">Entrar na conta</button>
 
         <Link to="/register">
           <button>Criar uma conta</button>
