@@ -1,0 +1,46 @@
+.checkbox_container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.checkbox_container input {
+    all: unset;
+    border-style: solid transparent;
+    border-radius: 6px;
+
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 3px;
+
+    border-style: solid transparent;
+    border-radius: 6px;
+    outline: 1px solid #DCDCDC;
+    outline-offset: 3px;
+    box-shadow: 0px 0px 0px 3px var(--dark-25);
+}
+
+.checkbox_container input:hover {
+    background-color: var(--brand-color);
+    cursor: pointer;
+}
+
+.checkbox_container label {
+    color: var(--dark-10);
+}
+
+.buttons_container button:hover {
+    cursor: pointer;
+    width: 100%;
+}
+
+.login_button {
+    background-color: var(--brand-color);
+    color: var(--dark-40);
+}
+
+.signup_button {
+    background-color: #EFF3F8;
+    color: var(--brand-color);
+}
+
