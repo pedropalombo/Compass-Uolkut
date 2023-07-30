@@ -10,7 +10,7 @@ export const HeaderProfile = () => {
       <nav className={styles.nav}>
         <ul>
           <li>Início</li>
-          <li>Perfil</li>
+          <li className={styles.profile_nav}>Perfil</li>
           <li>Comunidades</li>
           <li>Jogos</li>
         </ul>

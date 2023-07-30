@@ -1,6 +1,10 @@
+
 .nav ul {
   display: flex;
   gap: 2.5rem;
+  margin-left: 2.5rem;
+  margin-right: 6rem;
+  justify-content:space-between;
 }
 
 .nav ul li {
@@ -8,15 +12,27 @@
   font-size: var(--lg);
 }
 
+.profile_nav {
+  color: var(--brand-color) !important;
+  border-bottom: 1px solid var(--brand-color);
+  transition: 1s;
+}
+.profile_nav:hover{
+  color: var(--lg) !important;
+  border: none;
+}
+
 .nav ul li:hover {
   color: var(--brand-color);
   cursor: pointer;
 }
 
+
 .settings_container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  margin-left: 2rem;
+  gap: .6rem;
 }
 
 .settings_container img {
@@ -35,7 +51,9 @@
 @media (max-width: 900px) {
   .settings_container {
     gap: 0.5rem;
+    margin-left: 12rem;
   }
+  
 
   .settings_container p {
     display: none;
