@@ -42,19 +42,6 @@ export const FormDetails = () => {
             <option> Não</option>
           </select>
         </p>
-
-        <p>
-          <legend>Hábitos</legend>
-          <div>
-            <input type="checkbox" id="smoke" />
-            <label htmlFor="smoke">Fuma</label>
-          </div>
-          <div>
-            <input type="checkbox" id="drink" />
-            <label htmlFor="drink">Bebe</label>
-          </div>
-        </p>
-
         <p>
           <label>Você fuma?</label>
           <select required>
