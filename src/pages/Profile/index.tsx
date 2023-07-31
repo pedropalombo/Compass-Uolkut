@@ -41,10 +41,7 @@ export const Profile = () => {
           </section>
         </section>
 
-        <section className={`${styles.isMobile} ${styles.dois}`}>
-
         <section className={`${styles.isMobile} ${styles.quatro}`}>
-
           <Community />
         </section>
       </main>

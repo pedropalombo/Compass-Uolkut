@@ -30,11 +30,12 @@
 .settings_container {
   display: flex;
   align-items: center;
-  gap: .6rem;
+  gap: .8rem;
+  margin-left: 8rem;
 }
 
 .settings_container img {
-  width: clamp(1.5rem, 5vw, 2.5rem);
+  width: clamp(1.5rem, 8vw, 2.5rem);
   object-fit: cover;
 }
 
