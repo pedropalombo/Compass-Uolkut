@@ -19,7 +19,7 @@ export const Profile = () => {
         <InputSearch className="isMobile" />
 
         <section>
-          <UserProfile className="" />
+          <UserProfile />
           <Button isNavigation path="edit" text="Editar Perfil" />
 
           <section className={`${styles.isMobile} ${styles.dois}`}>
@@ -27,11 +27,9 @@ export const Profile = () => {
           </section>
         </section>
 
-        <InputSearch className="isMobile" />
-
         <ProfileInfo />
-        <section className={`${styles.isDesktop} ${styles.rightContainer}`}>
 
+        <section className={`${styles.isDesktop} ${styles.rightContainer}`}>
           <section className={styles.sideCategory}>
             <Friends />
           </section>
@@ -39,10 +37,8 @@ export const Profile = () => {
           <section className={styles.sideCategory}>
             <Community />
           </section>
-
         </section>
 
-        {/* Mobile */}
         <section className={`${styles.isMobile} ${styles.dois}`}>
           <Community />
         </section>
