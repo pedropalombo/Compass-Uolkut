@@ -16,7 +16,9 @@ export const Profile = () => {
       </Header.Root>
 
       <main className={styles.main}>
-        <InputSearch className="isMobile" />
+        <div className={styles.container_input}>
+          <InputSearch className="isMobile" />
+        </div>
 
         <section>
           <UserProfile />
