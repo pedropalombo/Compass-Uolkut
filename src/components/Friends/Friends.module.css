@@ -48,8 +48,14 @@
     font-size: var(--sm);
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .categoryContainer {
+        padding: 1.5rem;
+    }
 
-.categoryContainer {
-    padding: 1.5rem;
+    .topicSection {
+        justify-content: center !important;
+        gap: 6rem;
+    }
 }
+
