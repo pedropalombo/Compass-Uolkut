@@ -26,8 +26,7 @@
 .profileInfoContainer p {
   position: absolute;
   left: 0.75rem;
-  bottom: 50%;
-
+  bottom: 27%;
   font-size: clamp(0.75rem, 2vw, var(--md));
 }
 
@@ -127,7 +126,9 @@ dt {
   .multiple_options_field_details dd {
     font-size: .7rem;
   }
-
+  .profileInfoContainer p{
+    bottom: 68%;
+  }
   .isMobile {
     display: none;
   }
