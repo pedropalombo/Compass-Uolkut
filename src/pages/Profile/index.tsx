@@ -29,9 +29,8 @@ export const Profile = () => {
           </section>
         </section>
 
-        <InputSearch className="isMobile" />
-
         <ProfileInfo />
+
         <section className={`${styles.isDesktop} ${styles.rightContainer}`}>
           <section className={styles.sideCategory}>
             <Friends />
@@ -42,8 +41,10 @@ export const Profile = () => {
           </section>
         </section>
 
-        {/* Mobile */}
+        <section className={`${styles.isMobile} ${styles.dois}`}>
+
         <section className={`${styles.isMobile} ${styles.quatro}`}>
+
           <Community />
         </section>
       </main>
