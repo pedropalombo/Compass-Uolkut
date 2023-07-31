@@ -58,9 +58,9 @@ export function Community() {
   };
 
   return (
-    <section className={styles.communityContainer}>
+    <section className={styles.categoryContainer}>
       <section className={styles.topicSection}>
-        <span className={styles.categoryName}>Comunidade (number)</span>
+        <span className={styles.categoryName}>Comunidade (12)</span>
 
         <button
           className={styles.seeAllBtn}
