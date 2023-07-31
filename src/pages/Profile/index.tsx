@@ -1,4 +1,6 @@
 // import { Header } from "../../components/Header";
+import { Community } from "../../components/Community";
+import { Friends } from "../../components/Friends";
 import { Button } from "../../components/Button";
 import { Header } from "../../components/Header";
 import { InputSearch } from "../../components/InputSearch";
@@ -26,10 +28,23 @@ export const Profile = () => {
           </section>
         </section>
 
+        <InputSearch className="isMobile" />
+
+        <section className={`${styles.isMobile} ${styles.dois}`}>
+          <Friends />
+        </section>
+
         <ProfileInfo />
-        <section className={styles.isDesktop}>
-          <section>amigos</section>
-          <section>comunidade</section>
+        <section className={`${styles.isDesktop} ${styles.rightContainer}`}>
+
+          <section className={styles.sideCategory}>
+            <Friends />
+          </section>
+
+          <section className={styles.sideCategory}>
+            <Community />
+          </section>
+
         </section>
 
         {/* Mobile */}

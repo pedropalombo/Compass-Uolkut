@@ -1,0 +1,79 @@
+.communityContainer {
+    padding: 7px;
+    background-color: #FDFEFF;
+
+    border-radius: 10px;
+
+    max-width: 280px;
+    height: 410px;
+
+}
+
+.topicSection {
+    display: flex;
+
+    justify-content: space-around;
+
+    font-weight: 500;
+
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.categoryName {
+    font-size: 0.85vw;
+}
+
+.seeAllBtn {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    width: auto;
+
+    color: #ED2590;
+    background: transparent;
+
+    font-size: 0.8vw;
+}
+
+.contentSection {
+    display: grid;
+
+    justify-items: center;
+
+    justify-content: space-around;
+
+    grid-template-columns: auto auto auto;
+
+}
+
+.contentBox {
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 0;
+
+    width: 56px;
+    height: 81px;
+}
+
+.contentIcon {
+    border-radius: 5px;
+
+    width: 4vw;
+    min-width: 30px;
+    max-width: 50px;
+}
+
+.contentTitle {
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    font-size: 0.8vw;
+    font-weight: 400;
+
+}
