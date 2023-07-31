@@ -22,17 +22,12 @@ export const Profile = () => {
           <UserProfile />
           <Button isNavigation path="edit" text="Editar Perfil" />
 
-          {/* Mobile */}
           <section className={`${styles.isMobile} ${styles.dois}`}>
             <Friends />
           </section>
         </section>
 
         <InputSearch className="isMobile" />
-
-        <section className={`${styles.isMobile} ${styles.dois}`}>
-          <Friends />
-        </section>
 
         <ProfileInfo />
         <section className={`${styles.isDesktop} ${styles.rightContainer}`}>

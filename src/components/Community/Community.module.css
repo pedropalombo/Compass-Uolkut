@@ -1,10 +1,9 @@
-.communityContainer {
+.categoryContainer {
     padding: 7px;
     background-color: #FDFEFF;
 
     border-radius: 10px;
 
-    max-width: 280px;
     height: 410px;
 
 }
@@ -16,12 +15,11 @@
 
     font-weight: 500;
 
-    margin-top: 0.5em;
-    margin-bottom: 1em;
+    margin-top: 0.8em;
 }
 
 .categoryName {
-    font-size: 0.85vw;
+    font-size: var(--md);
 }
 
 .seeAllBtn {
@@ -35,17 +33,19 @@
     color: #ED2590;
     background: transparent;
 
-    font-size: 0.8vw;
+    font-size: var(--sm);
 }
 
 .contentSection {
     display: grid;
 
     justify-items: center;
-
     justify-content: space-around;
+    align-content: space-evenly;
 
     grid-template-columns: auto auto auto;
+
+    height: 100%;
 
 }
 
@@ -69,11 +69,7 @@
 }
 
 .contentTitle {
-    width: auto;
-    margin: 0;
-    padding: 0;
-
-    font-size: 0.8vw;
-    font-weight: 400;
+    font-size: var(--sm);
+    font-weight: 200;
 
 }

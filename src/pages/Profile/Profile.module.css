@@ -22,8 +22,8 @@
 
 }
 
-.sideCategory {
-  
+.dois > section {
+  max-width: 100%!important;
 }
 
 /* TESTES, TEMPORÁRIO */
@@ -39,5 +39,6 @@
 
   .isMobile {
     display: block;
+    order: 1;
   }
 }
