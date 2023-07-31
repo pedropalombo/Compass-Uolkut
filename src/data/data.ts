@@ -1,4 +1,4 @@
-import iconPlaceholder from "../images/Heart.svg";
+import iconPlaceholder from "../assets/images/Heart.svg";
 
 interface DataStandard {
   title: string;
