@@ -47,38 +47,38 @@ export const communityAvatars: AvatarProps[] = [
 export const friendAvatars: AvatarProps[] = [
   {
     title: "Fernando",
-    src: `${avatarsPath}/friends/fernando.png`,
+    src: `${avatarsPath}/friends/fernando.webp`,
   },
   {
     title: "Ana",
-    src: `${avatarsPath}/friends/ana.png`,
+    src: `${avatarsPath}/friends/ana.webp`,
   },
   {
     title: "Carlos",
-    src: `${avatarsPath}/friends/carlos.png`,
+    src: `${avatarsPath}/friends/carlos.webp`,
   },
   {
     title: "Vitor",
-    src: `${avatarsPath}/friends/vitor.png`,
+    src: `${avatarsPath}/friends/vitor.webp`,
   },
   {
     title: "Matheus",
-    src: `${avatarsPath}/friends/matheus.png`,
+    src: `${avatarsPath}/friends/matheus.webp`,
   },
   {
     title: "Ramos",
-    src: `${avatarsPath}/friends/ramos.png`,
+    src: `${avatarsPath}/friends/ramos.webp`,
   },
   {
     title: "Eiji",
-    src: `${avatarsPath}/friends/eiji.png`,
+    src: `${avatarsPath}/friends/eiji.webp`,
   },
   {
     title: "Julia",
-    src: `${avatarsPath}/friends/julia.png`,
+    src: `${avatarsPath}/friends/julia.webp`,
   },
   {
     title: "Carol",
-    src: `${avatarsPath}/friends/carol.png`,
+    src: `${avatarsPath}/friends/carol.webp`,
   },
 ];

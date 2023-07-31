@@ -7,7 +7,7 @@ export function Friends() {
       <section className={styles.topicSection}>
         <span className={styles.categoryName}>Amigos (248)</span>
 
-        <button>Ver todos</button>
+        <button className={styles.seeAllBtn}>Ver todos</button>
       </section>
 
       <section className={styles.contentSection}>
