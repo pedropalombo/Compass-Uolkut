@@ -1,37 +1,40 @@
-.profile_info_container {
+.profileInfoContainer {
   background-color: var(--dark-30);
 
   padding: 1.5rem;
   border-radius: 16px;
 
-  width: 592px;
-  max-width: 592px;
+  max-width: 37rem;
 }
 
-.profile_info_container h2 {
+.profileInfoContainer h2 {
   color: var(--dark-10);
-  font-size: var(--3xl);
+  font-size: clamp(var(--xl), 3vw, var(--3xl));
   font-weight: 500;
 }
 
-.profile_info_container blockquote {
+.profileInfoContainer blockquote {
   margin-top: 1.5rem;
   position: relative;
 }
 
-.profile_info_container img {
+.profileInfoContainer blockquote img {
   width: 100%;
+  object-fit: cover;
 }
 
-.profile_info_container p {
+.profileInfoContainer p {
   position: absolute;
   left: 0.75rem;
-  bottom: 25%;
+  bottom: 50%;
+
+  font-size: clamp(0.75rem, 2vw, var(--md));
 }
 
 .user_status {
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 
@@ -93,41 +96,39 @@ dt {
 }
 
 @media (max-width: 800px) {
-  .profile_info_container {
+  .profileInfoContainer {
     width: 100%;
   }
-  .profile_info_container blockquote {
-  margin-top: 1.5rem;
-  position: relative;
+
+  .profileInfoContainer blockquote {
+    margin-top: 1.5rem;
+    position: relative;
+
+    height: 5rem;
   }
 
-  .profile_info_container blockquote p{
-    font-size: .8rem;
-  }
-  
-  .profile_info_container p {
-    position: absolute;
-    left: 0.75rem;
-    bottom: 25%;
-  }
-  .user_status{
-    font-size: .8rem;
-  }
-  .user_status img{
-    width: 1.1rem;
+  .profileInfoContainer blockquote p {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
   }
 
-  .user_details{
+  .user_details {
     font-size: .8rem;
   }
+
   .multiple_options_field_details dd,
-  .multiple_options_field_details span{
+  .multiple_options_field_details span {
     text-align: center;
     font-size: .7rem;
-  } 
+  }
 
-  .multiple_options_field_details dd{
+  .multiple_options_field_details dd {
     font-size: .7rem;
   }
-}
 
+  .isMobile {
+    display: none;
+  }
+}

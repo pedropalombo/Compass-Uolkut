@@ -8,7 +8,7 @@ import bubble from "../../assets/images/Bubble.svg";
 
 export function ProfileInfo() {
   return (
-    <section className={styles.profile_info_container}>
+    <section className={styles.profileInfoContainer}>
       <header>
         <h2>Boa tarde, Iuri Silva</h2>
         <blockquote>
@@ -101,14 +101,14 @@ export function ProfileInfo() {
         <div className={styles.multiple_options_field_details}>
           <dt>Músicas:</dt>
           <dd>Trap</dd>
-          <dd>Rap</dd>
-          <dd>Indie</dd>
+          <dd className={styles.isMobile}>Rap</dd>
+          <dd className={styles.isMobile}>Indie</dd>
           <span>Ver todos</span>
         </div>
         <div className={styles.multiple_options_field_details}>
           <dt>Filmes:</dt>
           <dd>A rede social</dd>
-          <dd>Meu amigo totoro</dd>
+          <dd className={styles.isMobile}>Meu amigo totoro</dd>
           <span>Ver todos</span>
         </div>
       </dl>
