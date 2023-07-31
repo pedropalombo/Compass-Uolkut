@@ -48,8 +48,9 @@
     font-size: var(--sm);
 }
 
-@media (max-width: 768px) {}
-
-.categoryContainer {
-    padding: 1.5rem;
+@media (max-width: 768px) {
+    .topicSection {
+        justify-content: center !important;
+        gap: 6rem;
+    }
 }
