@@ -58,9 +58,9 @@ export function Friends() {
   };
 
   return (
-    <section className={styles.communityContainer}>
+    <section className={styles.categoryContainer}>
       <section className={styles.topicSection}>
-        <span className={styles.categoryName}>Amigos (number)</span>
+        <span className={styles.categoryName}>Amigos (20)</span>
 
         <button
           className={styles.seeAllBtn}
