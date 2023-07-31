@@ -3,13 +3,8 @@ import { UserProfile } from "../../components/UserProfile";
 import styles from "./EditProfile.module.css";
 
 export const EditProfile = () => {
-  console.log("oi");
-
   return (
     <section className={styles.container_all_elements}>
-      <div className={styles.user_profile}>
-        <UserProfile />
-      </div>
       <section className={styles.container_user_edit}>
         <dl className={styles.user_details}>
           <div>
@@ -73,6 +68,7 @@ export const EditProfile = () => {
           </div>
         </dl>
       </section>
+
       <section className={styles.container_elements_profile}>
         <div className={styles.container_profile}>
           <UserProfile />
