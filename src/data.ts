@@ -8,39 +8,39 @@ const avatarsPath = "src/assets/images/avatars";
 export const communityAvatars: AvatarProps[] = [
   {
     title: "Carros",
-    src: `${avatarsPath}/community/cars.png`,
+    src: `${avatarsPath}/community/cars.webp`,
   },
   {
     title: "Desenhos",
-    src: `${avatarsPath}/community/toons.png`,
+    src: `${avatarsPath}/community/toons.webp`,
   },
   {
     title: "Crazy",
-    src: `${avatarsPath}/community/crazy.png`,
+    src: `${avatarsPath}/community/crazy.webp`,
   },
   {
     title: "Fofos",
-    src: `${avatarsPath}/community/cute.png`,
+    src: `${avatarsPath}/community/cute.webp`,
   },
   {
     title: "Animes",
-    src: `${avatarsPath}/community/anime.png`,
+    src: `${avatarsPath}/community/anime.webp`,
   },
   {
     title: "Leitura",
-    src: `${avatarsPath}/community/reading.png`,
+    src: `${avatarsPath}/community/reading.webp`,
   },
   {
     title: "Meu ovo",
-    src: `${avatarsPath}/community/myEggs.png`,
+    src: `${avatarsPath}/community/myEggs.webp`,
   },
   {
     title: "My books",
-    src: `${avatarsPath}/community/reading.png`,
+    src: `${avatarsPath}/community/reading.webp`,
   },
   {
     title: "Cafeeee",
-    src: `${avatarsPath}/community/coffee.png`,
+    src: `${avatarsPath}/community/coffee.webp`,
   },
 ];
 

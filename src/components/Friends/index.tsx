@@ -5,7 +5,7 @@ export function Friends() {
   return (
     <section className={styles.categoryContainer}>
       <section className={styles.topicSection}>
-        <span className={styles.categoryName}>Amigos (20)</span>
+        <span className={styles.categoryName}>Amigos (248)</span>
 
         <button
           className={styles.seeAllBtn}
