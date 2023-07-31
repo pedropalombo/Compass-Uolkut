@@ -7,14 +7,7 @@ export function Friends() {
       <section className={styles.topicSection}>
         <span className={styles.categoryName}>Amigos (248)</span>
 
-        <button
-          className={styles.seeAllBtn}
-          onClick={() => {
-            alert("calma la ;)");
-          }}
-        >
-          Ver todos
-        </button>
+        <button>Ver todos</button>
       </section>
 
       <section className={styles.contentSection}>
