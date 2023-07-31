@@ -25,10 +25,10 @@ export const FormLogin = () => {
       </fieldset>
 
       <fieldset>
-        <button className="button_login">Entrar na conta</button>
+        <button className={styles.button_login}>Entrar na conta</button>
 
         <Link to="/register">
-          <button>Criar uma conta</button>
+          <button className={styles.button_register}>Criar uma conta</button>
         </Link>
 
         <a href="#">Esqueci a minha senha</a>
