@@ -1,12 +1,17 @@
 .container_all_elements {
   display: flex;
   height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   justify-content: center;
   align-items: center;
 
   gap: 2rem;
 }
 
+.container_user_profile_mobile{
+  display: none;
+}
 .container_user_edit_image_use {
   gap: 2rem;
   width: 80%;
@@ -108,9 +113,15 @@
     width: 100%;
   }
 
+  .container_user_profile_mobile{
+    display: block;
+    width: 90%;
+    order: -2;
+    margin-top: 18rem;
+    height: 20rem;
 
+  }
   .container_elements_profile {
-    border: 1px solid red;
     width: 100%;
   }
 
@@ -134,8 +145,11 @@
   }
 
   .container_profile_mobile {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     order: -3;
     margin-top: 2rem;
   }

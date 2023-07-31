@@ -5,6 +5,9 @@ import styles from "./EditProfile.module.css";
 export const EditProfile = () => {
   return (
     <section className={styles.container_all_elements}>
+      <div className={styles.container_user_profile_mobile}>
+        <UserProfile />
+      </div>
       <section className={styles.container_user_edit}>
         <dl className={styles.user_details}>
           <div>
