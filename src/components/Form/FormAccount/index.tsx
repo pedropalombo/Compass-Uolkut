@@ -38,12 +38,7 @@ export const FormAccount = () => {
           <label htmlFor="password" id="city-state">
             Cidade / Estado
           </label>
-          <input
-            type="text"
-            id="city-state"
-            placeholder="Recife - PE"
-            required
-          />
+          <input type="text" id="city-state" placeholder="Recife-PE" required />
         </p>
         <p>
           <label htmlFor="password">Senha</label>
