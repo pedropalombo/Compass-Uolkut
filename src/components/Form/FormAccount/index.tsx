@@ -50,7 +50,7 @@ export const FormAccount = () => {
           <input
             type="password"
             id="password"
-            placeholder="Pelo menos 8 caracteres"
+            placeholder="********"
             minLength={8}
             required
           />
