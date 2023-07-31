@@ -78,10 +78,10 @@ export const FormDetails = () => {
       </fieldset>
 
       <fieldset>
-        <button>Finalizar cadastro</button>
+        <button className={styles.button_end}>Finalizar cadastro</button>
 
         <Link to="/register">
-          <button>Voltar</button>
+          <button className={styles.button_back}>Voltar</button>
         </Link>
       </fieldset>
     </Form>

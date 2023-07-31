@@ -23,3 +23,14 @@
     color: var(--dark-10);
     margin-bottom: 1rem;
   }
+
+  .button_end{
+    background-color: var(--brand-color);
+      color: white;
+  }
+  
+  .button_back{
+    color: var(--brand-color);
+    background-color: #EFF3F8;
+    
+  }

@@ -68,10 +68,10 @@ export const FormAccount = () => {
       </fieldset>
 
       <fieldset>
-        <button>Continuar</button>
+        <button className={styles.button_continue}>Continuar</button>
 
         <Link to="/">
-          <button>Já tenho uma conta</button>
+          <button className={styles.button_back}>Já tenho uma conta</button>
         </Link>
       </fieldset>
     </Form>

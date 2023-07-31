@@ -1,6 +1,3 @@
-.formLoginContainer {
-    overflow-y: hidden;
-}
 
 .formLoginContainer fieldset a+a {
     color: var(--brand-color);
@@ -42,4 +39,10 @@
 
 .button_login{
     background-color: var(--brand-color);
+    color: white;
+}
+
+.button_register{
+    color: var(--brand-color);
+    background-color: #EFF3F8;
 }
