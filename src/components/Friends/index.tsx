@@ -9,39 +9,39 @@ export function Friends() {
   const sectionContent: DataStandard[] = [
     {
       title: "Fernando",
-      src: "https://i.imgur.com/g00WRng.png",
+      src: "src/assets/images/icons/friends/fernando.png",
     },
     {
       title: "Ana",
-      src: "https://i.imgur.com/smEE1fr.png",
+      src: "src/assets/images/icons/friends/ana.png",
     },
     {
       title: "Carlos",
-      src: "https://i.imgur.com/zGWdEfN.png",
+      src: "src/assets/images/icons/friends/carlos.png",
     },
     {
       title: "Vitor",
-      src: "https://i.imgur.com/NCNMWMq.png",
+      src: "src/assets/images/icons/friends/vitor.png",
     },
     {
       title: "Matheus",
-      src: "https://i.imgur.com/OZzAEqY.png",
+      src: "src/assets/images/icons/friends/matheus.png",
     },
     {
       title: "Ramos",
-      src: "https://i.imgur.com/rZ8fCOP.png",
+      src: "src/assets/images/icons/friends/ramos.png",
     },
     {
       title: "Eiji",
-      src: "https://i.imgur.com/iXETVnZ.png",
+      src: "src/assets/images/icons/friends/eiji.png",
     },
     {
       title: "Julia",
-      src: "https://i.imgur.com/AFJ9Uhs.png",
+      src: "src/assets/images/icons/friends/julia.png",
     },
     {
       title: "Carol",
-      src: "https://i.imgur.com/NrsHF8b.png",
+      src: "src/assets/images/icons/friends/carol.png",
     },
   ];
 
