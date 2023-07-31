@@ -4,6 +4,7 @@
   --background: #D9E6F7;
 
   --dark-10: #4B4B4B;
+  --dark-15: #868686;
   --dark-20: #B4AEAE;
   --dark-25: #EFF3F8;
   --dark-30: #FDFEFF;
@@ -45,6 +46,10 @@ li {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+  color: var(--brand-color);
+}
 fieldset {
   border: none;
 }
