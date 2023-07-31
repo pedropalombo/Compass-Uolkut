@@ -39,5 +39,6 @@
 
   .isMobile {
     display: block;
+    order: 1;
   }
 }

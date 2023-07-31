@@ -1,10 +1,8 @@
 .container_all_elements{
-  width: 100%;
-  margin: 1rem auto;
-  margin-top: 3%;
   display: flex;
+  height: 100vh;
   justify-content: center;
-  margin-top: 5rem;
+  align-items: center;
 }
 
 .container_user_edit_image_use{
@@ -19,19 +17,21 @@
   display: flex;
   flex-direction: row;
   margin-left: 2rem;
-    padding: 1rem ;
-    width:28rem;
-    max-width: 37rem;
-    border-radius: 12px;
-    background-color: var(--dark-30);
-    
+  padding: 1rem ;
+  width:28rem;
+  max-width: 37rem;
+  border-radius: 12px;
+  background-color: var(--dark-30);
+  
 }
 
-.container_profile{
-  margin-left: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
+.container_elements_profile{
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.container_profile_mobile{
+  display: none;
 }
 
 .edit_profile{
@@ -72,7 +72,6 @@
   .user_details div dd:hover{
     cursor: text;
     opacity: .7;
-    border: 1px solid lightslategray;
   }
   
   .user_details span {
@@ -96,9 +95,6 @@
     border: 1px solid var(--brand-color);   
     }
 
-    .container_profile_mobile{
-      display: none;
-    }
   
   @media (max-width: 900px) {
     .container_profile{
@@ -139,4 +135,5 @@
       margin-left: auto;
       margin-right: auto;
     }
+
   }
