@@ -1,7 +1,3 @@
-.header__auth {
-  background-color: pink;
-}
-
 .nav > ul {
   display: flex;
   gap: 2.5rem;
