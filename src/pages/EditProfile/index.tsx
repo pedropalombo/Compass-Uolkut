@@ -73,15 +73,17 @@ export const EditProfile = () => {
           </div>
         </dl>
       </section>
-      <div className={styles.container_profile}>
-        <UserProfile />
-        <Button />
-        <Button text="Voltar" isNavigation path="/profile" />
-      </div>
-      <div className={styles.container_profile_mobile}>
-        <Button />
-        <Button text="Voltar" isNavigation path="/profile" />
-      </div>
+      <section className={styles.container_elements_profile}>
+        <div className={styles.container_profile}>
+          <UserProfile />
+          <Button />
+          <Button text="Voltar" isNavigation path="/profile" />
+        </div>
+        <div className={styles.container_profile_mobile}>
+          <Button />
+          <Button text="Voltar" isNavigation path="/profile" />
+        </div>
+      </section>
     </section>
   );
 };
