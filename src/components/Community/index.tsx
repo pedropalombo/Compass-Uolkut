@@ -9,39 +9,39 @@ export function Community() {
   const sectionContent: DataStandard[] = [
     {
       title: "Carros",
-      src: "https://i.imgur.com/bX3Ifjp.png",
+      src: "src/assets/images/icons/community/cars.png",
     },
     {
       title: "Desenhos",
-      src: "https://i.imgur.com/ROqwqw4.png",
+      src: "src/assets/images/icons/community/toons.png",
     },
     {
       title: "Crazy",
-      src: "https://i.imgur.com/GejNWt4.png",
+      src: "src/assets/images/icons/community/crazy.png",
     },
     {
       title: "Fofos",
-      src: "https://i.imgur.com/nrIosPU.png",
+      src: "src/assets/images/icons/community/cute.png",
     },
     {
       title: "Animes",
-      src: "https://i.imgur.com/qCvbyYR.png",
+      src: "src/assets/images/icons/community/anime.png",
     },
     {
       title: "Leitura",
-      src: "https://i.imgur.com/DCN6mIZ.png",
+      src: "src/assets/images/icons/community/reading.png",
     },
     {
       title: "Meu ovo",
-      src: "https://i.imgur.com/gwnknXd.png",
+      src: "src/assets/images/icons/community/myEggs.png",
     },
     {
       title: "My books",
-      src: "https://i.imgur.com/tBIGWCc.png",
+      src: "src/assets/images/icons/community/reading.png",
     },
     {
       title: "Cafeeee",
-      src: "https://i.imgur.com/7N7C9nu.png",
+      src: "src/assets/images/icons/community/coffee.png",
     },
   ];
 
