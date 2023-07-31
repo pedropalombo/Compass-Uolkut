@@ -2,19 +2,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20rem;
+    width: 17.5rem;
     height: 3.5rem;
     background-color: var(--dark-40);
     border-radius: 0.75rem;
     border: 1px solid var(--dark-40);
     cursor: pointer;
     margin-bottom: 1rem;
-    font-size: var(--lg     );
-    color: var(--brand-color);
+    font-size: var(--lg);
+    color: var(--brand-color)
+    
 }
 .edit_profile:hover{
     transition: .8s;
-    border: 1px solid var(--brand-color);
+    opacity: .7;
 }
 .save_edit{
     width: 100%;
@@ -23,14 +24,14 @@
     background-color: var(--brand-color);
     color: var(--dark-30);
     border-radius: 12px;
+    font-size: var(--lg);
     margin-bottom: var(--lg);
     cursor: pointer;
   }
   
   .save_edit:hover{
-    border: 1px solid var(--dark-40);
     transition: 1s;
-    opacity: 10;
+    opacity:0.8;
   }
 
   @media (max-width:900px){

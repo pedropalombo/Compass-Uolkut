@@ -1,10 +1,16 @@
-import { Form, Link } from "react-router-dom";
+import { Form, Link, useNavigate } from "react-router-dom";
 
 import styles from "./FormDetails.module.css";
 
 export const FormDetails = () => {
+  const navigate = useNavigate();
+
+  const handleFormSubmit = (event: React.SyntheticEvent) => {
+    event.preventDefault();
+    navigate("/");
+  };
   return (
-    <Form className={styles.formDetailsContainer}>
+    <Form onSubmit={handleFormSubmit} className={styles.formDetailsContainer}>
       <fieldset>
         <p>
           <label htmlFor="about-me">Quem sou eu</label>
@@ -48,9 +54,9 @@ export const FormDetails = () => {
             <option disabled selected value="">
               Selecione uma opção
             </option>
-            <option> Sim</option>
-            <option> Não</option>
-            <option> Raramente</option>
+            <option>Sim</option>
+            <option>Não</option>
+            <option>Raramente</option>
           </select>
         </p>
 

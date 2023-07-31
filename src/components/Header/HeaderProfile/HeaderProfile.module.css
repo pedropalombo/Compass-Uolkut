@@ -14,8 +14,7 @@
 
 .profile_nav {
   color: var(--brand-color) !important;
-  border-bottom: 1px solid var(--brand-color);
-  transition: 1s;
+  transition: .7s;
 }
 .profile_nav:hover{
   color: var(--lg) !important;
@@ -31,7 +30,6 @@
 .settings_container {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
   gap: .6rem;
 }
 
