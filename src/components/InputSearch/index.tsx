@@ -14,7 +14,7 @@ export const InputSearch = ({ className }: InputSearchProps) => {
         type="text"
         name="search"
         id="search"
-        placeholder="Pesquisar no Orkut"
+        placeholder="Pesquisar no UOLkut"
       />
     </p>
   );

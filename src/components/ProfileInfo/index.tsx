@@ -71,22 +71,6 @@ export function ProfileInfo() {
           <dd>Programador</dd>
         </div>
         <div>
-          <dt>Filhos:</dt>
-          <dd>Não</dd>
-        </div>
-        <div>
-          <dt>Sexo:</dt>
-          <dd>Masculino</dd>
-        </div>
-        <div>
-          <dt>Fumo:</dt>
-          <dd>Não</dd>
-        </div>
-        <div>
-          <dt>Bebo:</dt>
-          <dd>Depende do dia</dd>
-        </div>
-        <div>
           <dt>Moro:</dt>
           <dd>Guarantã</dd>
         </div>
