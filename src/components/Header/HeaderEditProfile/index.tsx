@@ -3,7 +3,6 @@ import styles from "./HeaderEditProfile.module.css";
 import profileSettingsIcon from "../../../assets/images/profileIcon.svg";
 import caretDownSettingsIcon from "../../../assets/images/CaretDown.svg";
 
-
 export const HeaderEditProfile = () => {
     return (
         <>
@@ -18,7 +17,7 @@ export const HeaderEditProfile = () => {
 
             <div className={styles.settings_container}>
                 <img src={profileSettingsIcon} alt="" />
-                <p>Iuri Silva</p>
+                <p>Gabriel Barbosa</p>
                 <img src={caretDownSettingsIcon} alt="" />
             </div>
         </>

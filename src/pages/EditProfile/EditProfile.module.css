@@ -1,6 +1,6 @@
 .container_all_elements {
   display: flex;
-  height: 100vh;
+  height: 90vh;
   padding-top: 3rem;
   padding-bottom: 3rem;
   justify-content: center;
@@ -9,9 +9,10 @@
   gap: 2rem;
 }
 
-.container_user_profile_mobile{
+.container_user_profile_mobile {
   display: none;
 }
+
 .container_user_edit_image_use {
   gap: 2rem;
   width: 80%;
@@ -23,7 +24,7 @@
 
 .container_user_edit {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-left: 2rem;
   padding: 1rem;
   width: 28rem;
@@ -31,6 +32,7 @@
   border-radius: 12px;
   background-color: var(--dark-30);
 
+  height: 80vh;
 }
 
 .container_elements_profile {
@@ -39,6 +41,14 @@
 
 .container_profile_mobile {
   display: none;
+}
+
+.topic_text {
+  text-align: center;
+  color: var(--brand-color);
+  font-size: var(--4xl);
+  
+  margin-bottom: 2vh;
 }
 
 .edit_profile {
@@ -54,6 +64,13 @@
 .button_edit_profile:hover {
   transition: 1s;
   border: 1px solid var(--dark-30);
+}
+
+.inputField {
+  padding: 1vh;
+  background-color: #EFF3F8;
+  border-color: transparent;
+  border-radius: 0.2em;
 }
 
 .user_details {
@@ -86,19 +103,10 @@
   font-size: var(--sm);
 }
 
-.multiple_options_field_details {
+.save_btn_container {
   display: flex;
-  align-items: center;
-}
+  align-items: flex-end;
 
-.multiple_options_field_details dd {
-  padding: 0.5rem 1rem;
-
-  color: var(--dark-10);
-  font-size: var(--sm);
-
-  border-radius: 30px;
-  border: 1px solid var(--brand-color);
 }
 
 @media (max-width: 900px) {
@@ -109,18 +117,18 @@
   .container_all_elements {
     display: flex;
     flex-direction: column;
-    margin-top: 1.5rem;
-    width: 100%;
+    margin-top: 10rem;
+    width: 100%!important;
   }
 
-  .container_user_profile_mobile{
+  .container_user_profile_mobile {
     display: block;
     width: 90%;
     order: -2;
     margin-top: 18rem;
     height: 20rem;
-
   }
+
   .container_elements_profile {
     width: 100%;
   }
@@ -133,8 +141,14 @@
     margin-top: 2rem;
   }
 
+
+
   .profile_info_container {
     width: 100%;
+  }
+
+  .save_btn_container {
+    display: none;
   }
 
   .container_user_edit {

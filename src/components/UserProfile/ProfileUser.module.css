@@ -34,6 +34,10 @@
     position: center center;
 }
 
+.container_user_info {
+    text-align: center;
+}
+
 .name_user{
     margin-top: var(--xl);
     font-size: var(--2xl);
