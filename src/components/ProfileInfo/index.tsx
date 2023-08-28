@@ -5,12 +5,29 @@ import smiley from "../../assets/images/Smiley.svg";
 import thumbsUp from "../../assets/images/ThumbsUp.svg";
 import heart from "../../assets/images/Heart.svg";
 import bubble from "../../assets/images/Bubble.svg";
+import { useEffect, useState } from "react";
+import { onAuthStateChanged } from "firebase/auth";
+import { auth } from './../../firebase';
 
 export function ProfileInfo() {
+  const [authUser, setAuthUser] = useState(null);
+
+  //setting user's info from firebase
+  useEffect(() => {
+    const listen = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setAuthUser(user);
+        console.log(`user info: ${JSON.stringify(user)}`);
+      } else {
+        setAuthUser(null);
+      }
+    })
+  })
+
   return (
     <section className={styles.profileInfoContainer}>
       <header>
-        <h2>Boa tarde, Iuri Silva</h2>
+        <h2>Boa tarde, Gabriel Barbosa</h2>
         <blockquote>
           <img src={bubble} alt="" />
           <p>Programar sem café é igual poeta sem poesia.</p>

@@ -1,12 +1,30 @@
 import { Form, Link, useNavigate } from "react-router-dom";
 import styles from "./FormAccount.module.css";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { useState } from "react";
+import { auth } from './../../../firebase';
 
 export const FormAccount = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   const navigate = useNavigate();
 
   const handleFormSubmit = (event: React.SyntheticEvent) => {
     event.preventDefault();
-    navigate("details");
+
+    console.log(`email: ${email} | senha: ${password}`);
+    
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((useCrendential) => {
+        console.log(useCrendential);
+
+        navigate("/");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    
   };
 
   //formats options on "Relacionamento"
@@ -37,7 +55,13 @@ export const FormAccount = () => {
     <Form onSubmit={handleFormSubmit} className={styles.formContainer}>
       <fieldset>
         <p>
-          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+            onChange={(event) => setEmail(event.target.value)}
+          />
         </p>
         <p>
           <input
@@ -46,6 +70,7 @@ export const FormAccount = () => {
             placeholder="Senha"
             minLength={8}
             required
+            onChange={(event) => setPassword(event.target.value)}
           />
         </p>
         <p>
@@ -55,7 +80,7 @@ export const FormAccount = () => {
         <section className={styles.footer_inputs}>
           <section className={styles.left_container}>
             <p>
-              <input value="DD/MM/AAAA" type="date" id="date" required />
+              <input type="date" id="date" required />
             </p>
             <p className={styles.date_basis}>DD/MM/AAAA</p>
             <p>
