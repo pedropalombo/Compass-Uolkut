@@ -20,7 +20,7 @@ export const HeaderProfile = () => {
 
       <div className={styles.settings_container}>
         <img src={profileSettingsIcon} alt="" />
-        <p>Iuri Silva</p>
+        <p>Gabriel Barbosa</p>
         <img src={caretDownSettingsIcon} alt="" />
       </div>
     </>

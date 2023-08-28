@@ -11,84 +11,71 @@ export const EditProfile = () => {
       </Header.Root>
 
       <section className={styles.container_all_elements}>
-
-
         <div className={styles.container_user_profile_mobile}>
-          <UserProfile />
+          <UserProfile profile={true} />
         </div>
         <section className={styles.container_user_edit}>
+          <span className={styles.topic_text}>Editar informações</span>
           <dl className={styles.user_details}>
             <div>
-              <dt>Relacionamento:</dt>
-              <dd>Solteiro</dd>
+              <input 
+                id="userCareer" 
+                className={styles.inputField} 
+                placeholder="Profissão" 
+              />
             </div>
             <div>
-              <dt>Aniversário:</dt>
-              <dd>21 de Julho</dd>
+              <input 
+                id="userCity" 
+                className={styles.inputField} 
+                placeholder="Cidade" 
+              />
             </div>
             <div>
-              <dt>Idade:</dt>
-              <dd>22</dd>
+              <input 
+                id="userCountry" 
+                className={styles.inputField} 
+                placeholder="País" 
+              />
             </div>
             <div>
-              <dt>Interesses no Orkut:</dt>
-              <dd>Solteiro</dd>
+              <input
+                id="userBirthday"
+                className={styles.inputField}
+                placeholder="DD/MM/AAAA"
+                type="date"
+              />
             </div>
             <div>
-              <dt>Quem sou eu:</dt>
-              <dd>Programador</dd>
+              <input className={styles.inputField} placeholder="Senha" />
             </div>
             <div>
-              <dt>Filhos:</dt>
-              <dd>Não</dd>
+              <input
+                className={styles.inputField}
+                placeholder="Repetir Senha"
+              />
             </div>
             <div>
-              <dt>Sexo:</dt>
-              <dd>Masculino</dd>
-            </div>
-            <div>
-              <dt>Fumo:</dt>
-              <dd>Não</dd>
-            </div>
-            <div>
-              <dt>Bebo:</dt>
-              <dd>Depende do dia</dd>
-            </div>
-            <div>
-              <dt>Moro:</dt>
-              <dd>Guarantã</dd>
-            </div>
-            <div>
-              <dt>País:</dt>
-              <dd>Brasil</dd>
-            </div>
-            <div>
-              <dt>Cidade natal:</dt>
-              <dd>São Paulo</dd>
-            </div>
-            <div className={styles.multiple_options_field_details}>
-              <dt>Músicas:</dt>
-              <dd>Trap</dd>
-              <dd>Rap</dd>
-              <dd>Indie</dd>
-            </div>
-            <div className={styles.multiple_options_field_details}>
-              <dt>Filmes:</dt>
-              <dd>A rede social</dd>
-              <dd>Meu amigo totoro</dd>
+              <input
+                className={styles.inputField}
+                placeholder="Relacionamento"
+              />
             </div>
           </dl>
+
+          <section className={styles.save_btn_container}>
+            <Button />
+          </section>
+          
         </section>
 
         <section className={styles.container_elements_profile}>
           <div className={styles.container_profile}>
-            <UserProfile />
-            <Button />
-            <Button text="Voltar" isNavigation path="/profile" />
+            <UserProfile props={true} />
+            {/*<Button />*/}
           </div>
           <div className={styles.container_profile_mobile}>
             <Button />
-            <Button text="Voltar" isNavigation path="/profile" />
           </div>
         </section>
       </section>

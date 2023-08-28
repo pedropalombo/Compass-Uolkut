@@ -21,7 +21,7 @@ export const Profile = () => {
         </div>
 
         <section>
-          <UserProfile />
+          <UserProfile profile={true}/>
           <Button isNavigation path="edit" text="Editar Perfil" />
 
           <section className={`${styles.isMobile} ${styles.dois}`}>
