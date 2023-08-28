@@ -18,6 +18,8 @@
   align-items: center;
   gap: 1rem;
   padding-bottom: 2.5rem;
+
+  margin-top: -1.5em;
 }
 
 .formRootContainer header h2 {
@@ -30,9 +32,9 @@
   padding: 0 0.20rem;
 }
 
-.formRootContainer input:not(input[type="checkbox"]) {
+.formRootContainer input:not(input[type="checkbox"]), .formRootContainer select {
   background-color: #EFF3F8;
-  padding: 1rem;
+  padding: 0.8rem;
   border: none;
   width: 100%;
   border-radius: 8px;
@@ -41,14 +43,15 @@
   font-size: var(--md)
 }
 
-.formRootContainer input:not(input[type="checkbox"])::placeholder {
+.formRootContainer input:not(input[type="checkbox"])::placeholder, .formRootContainer select {
   color: var(--dark-15);
 }
 
-.formRootContainer fieldset {
+.formRootContainer fieldset, .formRootContainer select {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+
 }
 
 .formRootContainer fieldset + fieldset {
@@ -58,9 +61,11 @@
 .formRootContainer button {
   width: 100%;
   border: none;
-  padding: 1rem;
+  padding: 0.7rem;
   border-radius: 8px;
   font-size: var(--xl);
+
+  margin-top: -1.5em;
 }
 
 .formRootContainer button:hover {
@@ -77,19 +82,21 @@
     width: 20rem;
   }
 
-  .formRootContainer input:not(input[type="checkbox"]) {
+  .formRootContainer input:not(input[type="checkbox"]), .formRootContainer select {
     font-size: var(--sm);
     padding: 0.75rem;
   }
 
   .formRootContainer header {
-    margin-top: 2.5rem;
+    margin-top: -0.5em;
   }
 }
 
 @media (max-width: 768px) {
   .formRootContainer button {
     font-size: var(--md);
+
+    margin-top: -2em;
   }
 }
 

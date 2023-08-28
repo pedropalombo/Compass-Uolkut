@@ -8,6 +8,35 @@
   gap: 0.25rem;
 }
 
+option {
+  border-bottom: 1px solid black;
+}
+
+.date_basis {
+  color: var(--brand-color);
+  font-size: 0.5em;
+
+  margin-bottom: 0.65em;
+}
+
+.left_container {
+  position: relative;
+  float: left;
+
+  width: 45%!important;
+}
+
+.right_container {
+  position: relative;
+  float: right;
+
+  width: 50%!important
+}
+
+.right_container p {
+  margin-bottom: 1em;
+}
+
 .button_continue {
   background-color: var(--brand-color);
   color: white; 

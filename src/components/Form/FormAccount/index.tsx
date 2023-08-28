@@ -9,65 +9,87 @@ export const FormAccount = () => {
     navigate("details");
   };
 
+  //formats options on "Relacionamento"
+  const formatString = (option: string) => {
+    return option.charAt(0).toUpperCase() + option.slice(1);
+  };
+
+  //renders elements for "Relacionamento" selection
+  const renderRelationship = () => {
+    const relationshipOptions = [
+      "solteiro",
+      "casado",
+      "divorciado",
+      "namorando",
+      "preocupado",
+    ];
+
+    return relationshipOptions.map((element, key) => {
+      return (
+        <option key={key} value={key}>
+          {formatString(element)}
+        </option>
+      );
+    });
+  };
+
   return (
     <Form onSubmit={handleFormSubmit} className={styles.formContainer}>
       <fieldset>
         <p>
-          <label htmlFor="name">Nome</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="João da Silva Bernardo"
-            required
-          />
+          <input type="email" id="email" placeholder="Email" required />
         </p>
         <p>
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="exemplo@email.com"
-            required
-          />
-        </p>
-        <p>
-          <label htmlFor="date">Data de Nascimento</label>
-          <input type="date" id="date" required />
-        </p>
-        <p>
-          <label htmlFor="password" id="city-state">
-            Cidade / Estado
-          </label>
-          <input type="text" id="city-state" placeholder="Recife-PE" required />
-        </p>
-        <p>
-          <label htmlFor="password">Senha</label>
           <input
             type="password"
             id="password"
-            placeholder="********"
+            placeholder="Senha"
             minLength={8}
             required
           />
         </p>
         <p>
-          <label htmlFor="confirm-password">Confirmar Senha</label>
-          <input
-            type="password"
-            id="confirm-password"
-            placeholder="********"
-            required
-            minLength={8}
-          />
+          <input type="text" id="name" placeholder="Nome" required />
         </p>
+
+        <section className={styles.footer_inputs}>
+          <section className={styles.left_container}>
+            <p>
+              <input value="DD/MM/AAAA" type="date" id="date" required />
+            </p>
+            <p className={styles.date_basis}>DD/MM/AAAA</p>
+            <p>
+              <input type="text" id="city-state" placeholder="País" required />
+            </p>
+          </section>
+
+          <section className={styles.right_container}>
+            <p>
+              <input type="text" id="name" placeholder="Profissão" />
+            </p>
+            <p>
+              <input
+                type="text"
+                id="city-state"
+                placeholder="Cidade"
+                required
+              />
+            </p>
+
+            <select>
+              <option value="" selected disabled hidden>
+                Relacionamento
+              </option>
+
+              {renderRelationship()}
+            </select>
+          </section>
+        </section>
+        
       </fieldset>
 
       <fieldset>
-        <button className={styles.button_continue}>Continuar</button>
-
-        <Link to="/">
-          <button className={styles.button_back}>Já tenho uma conta</button>
-        </Link>
+        <button className={styles.button_continue}>Criar Conta</button>
       </fieldset>
     </Form>
   );
