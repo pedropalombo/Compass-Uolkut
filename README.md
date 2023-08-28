@@ -1,3 +1,4 @@
+A profile viewer, and account creation, system based on the hit web-application: Orkut!
 
 ## Installation
 
